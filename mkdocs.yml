@@ -1,4 +1,4 @@
-site_name: Open Source Guidance
+site_name: End-to-End Open-source Collaboration Guidance 
 theme:
   name: material
   logo: images/logo.png
@@ -23,6 +23,12 @@ plugins:
   - search
   - git-revision-date
 repo_url: https://github.com/squidfunk/mkdocs-material
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - abbr
+  - pymdownx.snippets
 #extra:
 #  version:
 #    provider: mike
