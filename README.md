@@ -1,5 +1,7 @@
 # E2E-OS-Guidance
-Collaboration area for PHUSE End-to-End Open-Source Guidance
+Collaboration area for PHUSE End-to-End Open-Source Guidance.
+
+Rendered content: https://phuse-org.github.io/E2E-OS-Guidance/. This rebuilds from main automatically via a gh-action.
 
 ## Adding content 
 
