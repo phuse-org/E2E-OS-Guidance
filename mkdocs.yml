@@ -22,7 +22,9 @@ theme:
 plugins:
   - search
   - git-revision-date
-repo_url: https://github.com/squidfunk/mkdocs-material
+repo_url: https://github.com/phuse-org/E2E-OS-Guidance
+repo_name: phuse-org/E2E-OS-Guidance
+edit_uri: edit/main/docs/
 markdown_extensions:
   - admonition
   - pymdownx.details
