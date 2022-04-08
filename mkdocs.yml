@@ -1,0 +1,34 @@
+site_name: End-to-End Open-source Collaboration Guidance 
+theme:
+  name: material
+  logo: images/logo.png
+  favicon: images/logo.png
+  palette:
+    scheme: default # light mode
+    primary: deep orange
+    accent: deep purple
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    #- navigation.tabs
+    #- navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - toc.follow
+    - navigation.top
+plugins:
+  - search
+  - git-revision-date
+repo_url: https://github.com/squidfunk/mkdocs-material
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - abbr
+  - pymdownx.snippets
+#extra:
+#  version:
+#    provider: mike
