@@ -1,4 +1,11 @@
 site_name: End-to-End Open-source Collaboration Guidance 
+# navigation
+nav:
+  - Introduction: index.md
+  - Guidance: guidance.md
+  - Meetings: meetings.md
+
+# theme
 theme:
   name: material
   logo: images/logo.png
