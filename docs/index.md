@@ -1,10 +1,12 @@
-# Introduction
+# Scope
 
 !!! warning "This is a work in progress"
 
     This repo is for an in-progress guidance doc
 
 ## Project scope
+
+Link to entry on [PhUSE Hub](https://advance.phuse.global/display/WEL/End-to-End+Open-source+Collaboration+Guidance).
 
 The initial scope of the project is guidance on the use of OSS, as well as collaboration on and creation of open-source projects. The primary aim is to provide guidance and link out to more information. If gaps are found, they will be noted for later follow-up and potential follow-on working groups:
 
