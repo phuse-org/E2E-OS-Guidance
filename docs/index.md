@@ -28,14 +28,22 @@ Relevance of licences present in dependencies, direct vs transitive dependencies
 
 ## Team
 
-
+- Mike Stackhouse - co-lead (Atorus)
+- James Black - co-lead (Roche/Genentech)
+- (TBC)
 
 ## Links
+
+### OSS guides
 
 - sustainoss.org: Focus on making OSS sustainable, but still covers topics like licences 
 - chaoss.community: Working groups and tools focussed on OSS health
 - linuxfoundation.org/resources/open-source-guides/ A comprehensive guide
 
+### OSS support
+
+- openpharma.github.io (repo tracker) and pharmaverse.org (community and strategic leadership of open source efforts)
+- R Consortium ISC grants to open source projects: https://www.r-consortium.org/
 
 
 
