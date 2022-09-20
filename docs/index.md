@@ -28,24 +28,21 @@ Relevance of licences present in dependencies, direct vs transitive dependencies
 * Examples of release models, particularly where projects have inter-project dependencies (e.g. tidyverse de-coupled release model vs bioconductor cohort release model)
 * Tools for releasing and maintaining projects, with particular reference to tools for R packages
 
-## Team
+## Definitions
 
-- Mike Stackhouse - co-lead (Atorus)
-- James Black - co-lead (Roche/Genentech)
-- (TBC)
+CLA: Contributor License Agreement. Has a similar purpose to a DCO (Developer Certificate of Origin). 
 
-## Links
+CSR: Clinical Study Report 
 
-### OSS guides
+eCRF: electronic Case Report Form 
 
-- sustainoss.org: Focus on making OSS sustainable, but still covers topics like licences 
-- chaoss.community: Working groups and tools focussed on OSS health
-- linuxfoundation.org/resources/open-source-guides/ A comprehensive guide
+GPL: GNU General Public License 
 
-### OSS support
+MIT: Common acronym for a license released by the Massachusetts Institute of Technology  
 
-- openpharma.github.io (repo tracker) and pharmaverse.org (community and strategic leadership of open source efforts)
-- R Consortium ISC grants to open source projects: https://www.r-consortium.org/
+OS: Open-Source 
 
+OSS: Open-Source Software 
 
+IP: Intellectual Property 
 
