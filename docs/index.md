@@ -26,16 +26,21 @@ Relevance of licences present in dependencies, direct vs transitive dependencies
 * Examples of release models, particularly where projects have inter-project dependencies (e.g. tidyverse de-coupled release model vs bioconductor cohort release model)
 * Tools for releasing and maintaining projects, with particular reference to tools for R packages
 
-## Team
+## Definitions
 
+CLA: Contributor License Agreement. Has a similar purpose to a DCO (Developer Certificate of Origin). 
 
+CSR: Clinical Study Report 
 
-## Links
+eCRF: electronic Case Report Form 
 
-- sustainoss.org: Focus on making OSS sustainable, but still covers topics like licences 
-- chaoss.community: Working groups and tools focussed on OSS health
-- linuxfoundation.org/resources/open-source-guides/ A comprehensive guide
+GPL: GNU General Public License 
 
+MIT: Common acronym for a license released by the Massachusetts Institute of Technology  
 
+OS: Open-Source 
 
+OSS: Open-Source Software 
+
+IP: Intellectual Property 
 

@@ -19,6 +19,21 @@ theme:
     - navigation.expand
     - toc.follow
     - navigation.top
+nav:
+  - Home: 'index.md'
+  - 'Why OS?': whyopensource.md
+  - 'Using': 
+    - 'Using OS': usingos.md
+  - 'Releasing OS':
+    - 'IP': 'releasingOS/ip.md'
+    - 'Licences': releasingOS/licenses.md
+    - 'Preparing': 'releasingOS/prep.md'
+    - 'Reputational risks': releasingOS/reputation.md
+    - 'Collaboration': releasingOS/collab.md
+  - About:
+    - 'Links': links.md
+    - 'WG Team': 'team.md'
+    - 'Meetings': 'meetings.md'
 plugins:
   - search
   - git-revision-date
@@ -29,6 +44,7 @@ markdown_extensions:
   - pymdownx.superfences
   - abbr
   - pymdownx.snippets
+  - footnotes
 #extra:
 #  version:
 #    provider: mike
