@@ -1,4 +1,11 @@
 site_name: End-to-End Open-source Collaboration Guidance 
+# navigation
+nav:
+  - Introduction: index.md
+  - Guidance: guidance.md
+  - Meetings: meetings.md
+
+# theme
 theme:
   name: material
   logo: images/logo.png
@@ -37,7 +44,9 @@ nav:
 plugins:
   - search
   - git-revision-date
-repo_url: https://github.com/squidfunk/mkdocs-material
+repo_url: https://github.com/phuse-org/E2E-OS-Guidance
+repo_name: phuse-org/E2E-OS-Guidance
+edit_uri: edit/main/docs/
 markdown_extensions:
   - admonition
   - pymdownx.details
