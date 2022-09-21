@@ -1,5 +1,18 @@
 ## Team
 
+Anders Bilgrau, Novo nordisk
+
+Estella Dong, Bayer
+
+James Black, Roche (co-lead)
+
+Karl Brand, Bayer
+
+Keaven Anderson, Merck
+
+Michael Stackhouse, Atorus Research (co-lead)
+
+Richard Iannone, Posit
 
 
 
