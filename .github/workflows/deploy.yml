@@ -1,16 +1,25 @@
-name: deploy 
 on:
+  workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: main
+
+name: Quarto Publish
+
 jobs:
-  deploy:
+  build-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render and Publish
+        uses: quarto-dev/quarto-actions/publish@v2
         with:
-          python-version: 3.x
-      - run: pip install mkdocs-material 
-      - run: pip install mkdocs-git-revision-date-plugin
-      - run: mkdocs gh-deploy --force
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
