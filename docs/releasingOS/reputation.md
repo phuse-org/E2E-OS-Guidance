@@ -1,5 +1,0 @@
-### Reputational risks and supporting others 
-
-> What are the expectations when I release a package? Are there risks to my company's brand having abandoned non-maintained packages? 
-
-In this guidance it is suggested to open-source early, yet doing so could expose projects that are not ready for use, might be cancelled before reaching v1.0 or are never successfully adopted. The ratio of failed to successful projects is an important consideration, but a skew in that ratio being a negative indicator can be mitigated if repositories are clear on what stage of the product life cycle they are at (https://lifecycle.r-lib.org/) and make use of tools to inform users if a project has been deprecated (https://docs.github.com/en/repositories/archiving-a-github-repository/archiving-repositories), or are looking for new maintainers to take over the project.   

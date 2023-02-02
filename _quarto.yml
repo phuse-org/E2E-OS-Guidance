@@ -1,0 +1,35 @@
+project:
+  type: book
+
+book:
+  title: "End-to-End Open-source Collaboration Guidance"
+  subtitle: "Data Visualisation & Open Source Technology Working Group"
+  edition: "DRAFT"
+  author: "PhUSE Working Group"
+  repo-url: https://github.com/phuse-org/E2E-OS-Guidance
+  #date: "2/2/2023"
+  abstract: "This whitepaper provides guidance on the use of Open-Source Software (OSS), as well as collaboration on and creation of open-source projects used by data scientists in clinical reporting workflows"
+  sharing: linkedin
+  downloads: pdf
+  sidebar:
+    search: true
+    logo: assets/phuse.png
+  chapters:
+    - index.qmd
+    - definitions.qmd
+    - why.qmd
+    - using.qmd
+    - releasing.qmd
+    - contributors.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+

@@ -1,0 +1,17 @@
+# Definitions {.unnumbered}
+
+CLA: Contributor License Agreement. Has a similar purpose to a DCO (Developer Certificate of Origin). 
+
+CSR: Clinical Study Report 
+
+eCRF: electronic Case Report Form 
+
+GPL: GNU General Public License 
+
+MIT: Common acronym for a license released by the Massachusetts Institute of Technology  
+
+OS: Open-Source 
+
+OSS: Open-Source Software 
+
+IP: Intellectual Property 
