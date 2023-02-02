@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>End-to-End Open-source Collaboration Guidance - 3&nbsp; Releasing open source</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./contributors.html" rel="next">
+<link href="./using.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Releasing open source</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./assets/phuse.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">End-to-End Open-source Collaboration Guidance</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/phuse-org/E2E-OS-Guidance" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="./End-to-End-Open-source-Collaboration-Guidance.pdf" title="Download PDF" class="sidebar-tool px-1"><i class="bi bi-file-pdf"></i></a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=|url|" title="LinkedIn" class="sidebar-tool px-1"><i class="bi bi-linkedin"></i></a>
+</div>
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Guidance scope and purpose</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./definitions.html" class="sidebar-item-text sidebar-link">Definitions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./why.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Open source: the what and why</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./using.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Using open source</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./releasing.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Releasing open source</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./contributors.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Contributors</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#intellectual-property-ip" id="toc-intellectual-property-ip" class="nav-link active" data-scroll-target="#intellectual-property-ip"><span class="toc-section-number">3.1</span>  Intellectual Property (IP)</a></li>
+  <li><a href="#preparing-for-release" id="toc-preparing-for-release" class="nav-link" data-scroll-target="#preparing-for-release"><span class="toc-section-number">3.2</span>  Preparing for release</a>
+  <ul class="collapse">
+  <li><a href="#when-is-a-good-time-to-open-source" id="toc-when-is-a-good-time-to-open-source" class="nav-link" data-scroll-target="#when-is-a-good-time-to-open-source"><span class="toc-section-number">3.2.1</span>  When is a good time to open source?</a></li>
+  <li><a href="#does-it-matter-where-you-put-a-package-on-github.com" id="toc-does-it-matter-where-you-put-a-package-on-github.com" class="nav-link" data-scroll-target="#does-it-matter-where-you-put-a-package-on-github.com"><span class="toc-section-number">3.2.2</span>  Does it matter where you put a package on github.com?</a></li>
+  <li><a href="#what-is-important-to-look-for-when-releasing-a-package-that-started-life-internally" id="toc-what-is-important-to-look-for-when-releasing-a-package-that-started-life-internally" class="nav-link" data-scroll-target="#what-is-important-to-look-for-when-releasing-a-package-that-started-life-internally"><span class="toc-section-number">3.2.3</span>  What is important to look for when releasing a package that started life internally?</a></li>
+  </ul></li>
+  <li><a href="#could-others-claim-we-stole-their-ip" id="toc-could-others-claim-we-stole-their-ip" class="nav-link" data-scroll-target="#could-others-claim-we-stole-their-ip"><span class="toc-section-number">3.3</span>  Could others claim we stole their IP?</a></li>
+  <li><a href="#reputational-risks-and-supporting-others" id="toc-reputational-risks-and-supporting-others" class="nav-link" data-scroll-target="#reputational-risks-and-supporting-others"><span class="toc-section-number">3.4</span>  Reputational risks and supporting others</a></li>
+  <li><a href="#licenses-releasing-a-project" id="toc-licenses-releasing-a-project" class="nav-link" data-scroll-target="#licenses-releasing-a-project"><span class="toc-section-number">3.5</span>  Licenses: releasing a project</a></li>
+  <li><a href="#collaboration-and-governance-models" id="toc-collaboration-and-governance-models" class="nav-link" data-scroll-target="#collaboration-and-governance-models"><span class="toc-section-number">3.6</span>  Collaboration and governance models</a></li>
+  <li><a href="#what-different-governance-models-exist-for-open-source" id="toc-what-different-governance-models-exist-for-open-source" class="nav-link" data-scroll-target="#what-different-governance-models-exist-for-open-source"><span class="toc-section-number">3.7</span>  What different governance models exist for open source?</a></li>
+  <li><a href="#when-do-we-need-contracts" id="toc-when-do-we-need-contracts" class="nav-link" data-scroll-target="#when-do-we-need-contracts"><span class="toc-section-number">3.8</span>  When do we need contracts?</a></li>
+  <li><a href="#the-risks-of-open-sourcing" id="toc-the-risks-of-open-sourcing" class="nav-link" data-scroll-target="#the-risks-of-open-sourcing"><span class="toc-section-number">3.9</span>  The risks of open-sourcing</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Releasing open source</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>Without open-source, many of the R packages we use today would never have developed or would be kept behind company firewalls. Open-source provides a mechanism for code sharing and collaboration, which in turn means talent can flow from company to company across our industry, we prevent duplication of the same post-competitive tools, and we move closer to decrease the burden on reviewers by bringing consistency in both our code and outputs in a submission.</p>
+<section id="intellectual-property-ip" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="intellectual-property-ip"><span class="header-section-number">3.1</span> Intellectual Property (IP)</h2>
+<p>IP is often bucketed into pre-competitive and competitive IP <span class="citation" data-cites="Cont2016">(<a href="references.html#ref-Cont2016" role="doc-biblioref">Contreras 2016</a>)</span>, with post-competitive being a less established term we will define in this guidance. In clinical reporting, we place significant resources into the collection and presentation of information that was collected on our competitive IP in confirmatory clinical trials. In order to help separate this simpler case from pre-competitive – here we define as post-competitive a unique scenario of code that takes data generated as part of confirmatory studies (e.g.&nbsp;a Phase III trial) and creates an output. Post-competitive IP is where the benefits of open sourcing and encouraging between company collaboration can be more clearly differentiated from potential competitive advantage in developing new medicines.</p>
+<p>The following summarizes the three types of IP:</p>
+<dl>
+<dt>Pre-competitive</dt>
+<dd>
+<p>IP which is not a competitive advantage. This can be a complex definition, and will require guidance from company council. For instance, data standards may clearly be pre-competitive, but for anonymised data from historical trials, or an algorithm that generates risk scores for a certain outcome could provide a competitive advantage, or be defined as pre-competitive.</p>
+</dd>
+<dt>Competitive IP</dt>
+<dd>
+<p>Clinical reporting relevant examples would be information on a new target, molecule or algorithm that provides an advantage in the creation of new medicines, or as a standalone data product that can be monetized.</p>
+</dd>
+<dt>Post-competitive IP</dt>
+<dd>
+<p>Code that translates existing eCRF data into a CSR for submission. In the context of PhUSE collaborators, this will often be packages that take data and apply templated data steps and visualizations, like those seen in the <a href="https://pharmaverse.org/">pharmaverse</a>.</p>
+</dd>
+</dl>
+</section>
+<section id="preparing-for-release" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="preparing-for-release"><span class="header-section-number">3.2</span> Preparing for release</h2>
+<section id="when-is-a-good-time-to-open-source" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="when-is-a-good-time-to-open-source"><span class="header-section-number">3.2.1</span> When is a good time to open source?</h3>
+<p>As a general rule <em>arising IP</em> <span class="citation" data-cites="LawArising">(<a href="references.html#ref-LawArising" role="doc-biblioref">Law Insider 2022</a>)</span>, that is IP generated as part of the project, is simpler to handle than <em>background IP</em> that already exists. There is often a benefit to define what you want to do, decide if it would be open sourced, and if so, then start it in an open-source setting. This also helps to encourage defining a clear scope from day one, and encourage others to engage early rather than initiate additional projects that later may not be compatible without significant re-factoring.</p>
+</section>
+<section id="does-it-matter-where-you-put-a-package-on-github.com" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="does-it-matter-where-you-put-a-package-on-github.com"><span class="header-section-number">3.2.2</span> Does it matter where you put a package on github.com?</h3>
+<p>What are the differences between GitHub organizations that host packages like <a href="https://github.com/phuse-org">phuse-org</a>, <a href="https://github.com/rinpharma">rinpharma</a>, <a href="https://github.com/ropensci">ropensci</a>, <a href="https://github.com/openpharma">openpharma</a>, <a href="https://github.com/pharmaverse">pharmaverse</a>, <a href="https://github.com/pharmar">pharmar</a>, personal organisations, company owned organisations and organisations created to host a single project?</p>
+<p>Ultimately, the license chosen has an impact on how a package can be used, rather than the location the code is shared from. The location though can influence how a project is perceived. If it is hosted on a GitHub organisation with the name of a pharma company, relative to a pan-company organisation, it may imply that the project is ‘<em>Company A’s</em>’ project rather than something they wish to co-create. As a general rule, the recommendation would be to place it in a company’s organisation if you wish to remain control of the roadmap, but look to pan-company organisations if you wish to co-create and co-own the packages trajectory. Some examples are;</p>
+<ul>
+<li>Personal Github orgs
+<ul>
+<li>diffdf (<a href="https://github.com/gowerc/diffdf">gowerc/diffdf</a>) and survival (<a href="https://github.com/therneau/survival">therneau/survival</a>) are examples of two repositories used in pharma hosted in Github orgs belonging to a specific individual</li>
+</ul></li>
+<li>Project/Initiative Github orgs
+<ul>
+<li><a href="https://github.com/openpharma">openpharma</a>: While openpharma has a dashboard and metadata pipeline that is agnostic to where a package comes from, it also will house packages that do not want to be associated with a specific company or organisation</li>
+<li><a href="https://github.com/pharmaverse">pharmaverse</a>: A sub-set of the pharmaverse clinical reporting repositories are also hosted on the pharmaverse Github org</li>
+<li><a href="pharmaR">pharmaR</a>: Houses repositories from the R Validation Hub working group</li>
+</ul></li>
+<li>Company Github orgs
+<ul>
+<li>Many companies maintain Github orgs either at the company or department in a company level, like <a href="https://github.com/GSK-Biostatistics">GSK-Biostatistics</a>, <a href="https://github.com/Roche">Roche</a>, <a href="https://github.com/Genentech">Genentech</a>, <a href="https://github.com/Novartis">Novartis</a></li>
+</ul></li>
+<li>Organisation Github orgs
+<ul>
+<li><a href="https://github.com/phuse-org">phuse-org</a>: PHUSE projects and working groups from PHUSE</li>
+<li><a href="https://github.com/ropensci">ropensci</a>, <a href="https://github.com/ropenscilabs">ropenscilabs</a>, <a href="https://github.com/ropensci-docs">ropensci-docs</a>, etc: rOpenSci maintains several GitHub orgs, with rOpenSci housing mature R packages contributed by their staff, or peer-reviewed.</li>
+</ul></li>
+</ul>
+</section>
+<section id="what-is-important-to-look-for-when-releasing-a-package-that-started-life-internally" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="what-is-important-to-look-for-when-releasing-a-package-that-started-life-internally"><span class="header-section-number">3.2.3</span> What is important to look for when releasing a package that started life internally?</h3>
+<p>If a package started its development on an internal git server, or a private repository on github.com, there could be some risk of exposing data either in issues, or historical commits. These could range from screenshots of patient data, tables or other business confidential information in issues, to passwords or files in the git commit history that were deleted but not purged. The recommendation is to always flatten the commit history, and wipe issues by starting a new git repository when open sourcing unless you are certain no information can be leaked.</p>
+</section>
+</section>
+<section id="could-others-claim-we-stole-their-ip" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="could-others-claim-we-stole-their-ip"><span class="header-section-number">3.3</span> Could others claim we stole their IP?</h2>
+<p>When discussing the open sourcing of a codebase, it is important to flag to internal counsel existing external projects, and the overlap of scope with the project you intend to release.</p>
+<p>It is possible that decisions made before open sourcing could become a risk after open sourcing. As an example of a plausible scenario; a team need to implement a new function. This function exists in another GPL-3 copy left licenced project. To add that project would introduce multiple dependencies that aren’t used by that particular function so a member of the team decides to copy the function into the package. One year later, the package is open sourced with the licence infringing code. Such an occurrence could be lessened by a Contributor License Agreement (CLA; see https://github.com/contributor-assistant/github-action for an example of CLA automation). A CLA helps ensure that anyone contributing to a project acknowledges specific terms expected of contributions, like the contributions are novel code and the author will abide by the projects license terms. In the absence of a CLA it is important to ensure that all code within the package is original, and there is no culture of cannibalising external code and infringing on people’s copyright within the development team even for internal projects.</p>
+</section>
+<section id="reputational-risks-and-supporting-others" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="reputational-risks-and-supporting-others"><span class="header-section-number">3.4</span> Reputational risks and supporting others</h2>
+<p>What are the expectations when I release a package? Are there risks to my company’s brand having abandoned non-maintained packages?</p>
+<p>In this guidance it is suggested to open-source early, yet doing so could expose projects that are not ready for use, might be cancelled before reaching v1.0 or are never successfully adopted. The ratio of failed to successful projects is an important consideration, but a skew in that ratio being a negative indicator can be mitigated if repositories are clear on what stage of the product life cycle they are at (https://lifecycle.r-lib.org/) and make use of tools to inform users if a project has been deprecated (https://docs.github.com/en/repositories/archiving-a-github-repository/archiving-repositories), or are looking for new maintainers to take over the project.</p>
+</section>
+<section id="licenses-releasing-a-project" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="licenses-releasing-a-project"><span class="header-section-number">3.5</span> Licenses: releasing a project</h2>
+<p>Ultimately, the license used for a project would require in-house counsel guidance on what license is preferred.</p>
+<p>All code open-sourced should have a license. The license has a standard location of being a text file called ‘LICENSE’ in the root of the project folder, or a markdown file called ‘LICENSE.md’. Of particular note is that R packages often have the license specified in the R specific location of the DESCRIPTION file, or may have it in both the standard and R specific locations (in rare cases these can also contradict so it is important to read both).</p>
+<p>Generally, permissive licenses are more common in clinical reporting, with the majority of pharmaverse R packages using an MIT (https://choosealicense.com/licenses/mit/) or Apache 2.0 (https://choosealicense.com/licenses/apache-2.0/) license (add ref). These licences allow distribution, commercial use and modification. One primary difference between MIT and Apache 2.0 is that the latter has patent protection language and rules around trademark usage, and may be preferred in larger projects due to its focus on more explicitly spelling out the terms.</p>
+<p>As a general guidance, if the purpose of the project is to let future contributors freely use the code, MIT license is a concise permissive license to adopt. In the pharmaceutical industry, however, the patent of the code is often of concern in a post-competitive environment across companies, and thus an Apache 2.0 license could be more suitable. On the other hand, the copyleft license (e.g.&nbsp;GPLv2, GPLv3) demands any downstream derivatives to follow the same copyleft license of the source project and generally should be avoided. Sometimes, a company’s legal team might come up with their own license that is not listed as one of the approved open-source licenses. It is highly recommended to only use standard open-source licenses, as these are verified by the Open-Source Initiative, so others can easily understand the governance model of your project.</p>
+<p>It is highly recommended to select a suitable license from the project initiation, because a change in the license could impact many aspects of the project. With a permissive license, others have been granted permission to license modification from its inception. When under a permissive license, you could change to a license with more requirements, but this would not rescind the historical codebase that has a more permissive license.</p>
+</section>
+<section id="collaboration-and-governance-models" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="collaboration-and-governance-models"><span class="header-section-number">3.6</span> Collaboration and governance models</h2>
+<p>Open-sourcing a project allows others to leverage the code, but the ultimate goal is often that the open-source community adopts and helps extend and evolve the project. How projects govern this shared development is diverse. A commonality across all projects is that the repository, and it’s main/production branch, will have some form of write access control, meaning a level of governance is present even if it’s not formalised.</p>
+</section>
+<section id="what-different-governance-models-exist-for-open-source" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="what-different-governance-models-exist-for-open-source"><span class="header-section-number">3.7</span> What different governance models exist for open source?</h2>
+<p>There is no definitive definition of open-source governance models. The following models are based on mapping Redhat (https://www.redhat.com/en/blog/understanding-open-source-governance-models and https://opensource.com/article/20/5/open-source-governance) and Linux Foundation (https://www.linuxfoundation.org/tools/open-source-reading-list/) notes to the packages relevant to clinical reporting.</p>
+<dl>
+<dt>Single Entity</dt>
+<dd>
+<p>This category refers to a project where a single entity is the final decision maker, regardless of whether that single entity is an individual, a company or other legal entity. This governance model is sometimes referred to as the “privately open source”, “founder-leader”, or “benevolent dictator” model. The single entity controls which pull requests go to master and provides instruction on how new code should integrate in order to be accepted. Famous examples are Python until 2018 and Linux. Within pharmaverse.org, diffdf and many of the single company governed packages are an example of this governance model.</p>
+</dd>
+<dt>Steering Group</dt>
+<dd>
+<p>This category refers to a project where the ultimate decision-making capacity is shared between more than one entity. The structure of the group and manner in which the group makes decisions can vary. The name used to refer to the group can also vary, examples include “governing board”, “steering group”, and “council”. A famous example includes the relatively oligarchical Python Steering Council from 2018, however many projects prefer simple democracies, or merely that a sufficient number of approvals from among the contributing entities are sufficient to approve acceptance to the production branch. Within pharmaverse.org, admiral is an example of this governance model.</p>
+</dd>
+<dt>Do-ocracy</dt>
+<dd>
+<p>This category refers to a project where access to the production branch is given out fairly freely, usually based on prior interactions with the primary contributors, or actual contributions via external pull requests. Trust is placed in the community to come to an agreement regarding acceptance to the production branch. This category is sometimes also referred to as a “self-governed” or “non-governed” governance model. Within pharmaverse.org, visR is an example of this governance model.</p>
+</dd>
+<dt>Foundation governed</dt>
+<dd>
+<p>A legal body (e.g., non-profit) assumes control - an example organisation is the Linux Foundation which governs many projects, while in Pharma there are parallels to efforts like Transcelerate and OHDSI. There are no examples of this model within pharmaverse.org, but R/Pharma repositories do follow this model, where the registered non-profit Open Source in Pharma governs the github organisation.</p>
+</dd>
+</dl>
+<p>If two or more companies want to formally collaborate on an open-source project, what is the role of legal contracts between the companies when the code is open-source?</p>
+<p>Contributions to open-source code can come in many forms, and there is a great deal of diversity in projects relevant to clinical reporting. This is an emerging area for pharma companies, and so we will focus on promoting awareness, rather than giving firm guidelines.</p>
+</section>
+<section id="when-do-we-need-contracts" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="when-do-we-need-contracts"><span class="header-section-number">3.8</span> When do we need contracts?</h2>
+<p>When initiating a project like an R package, or when another company is considering investing in collaboration to an existing project, there could be a discussion on having a legal framework layered on top of the collaboration. To help contextualise this, we will use four example projects.</p>
+<dl>
+<dt>dplyr</dt>
+<dd>
+<p>The dplyr project is a ubiquitous in pharma, but is a generic data science package for data munging. The code owners are listed as an individual from a vendor, academia and a consultancy and it’s released under a permissive license. This package is extensively consumed, and a core dependency in data related packages like admiral. This package is heavily depended on Pharma, but no legal agreement exists beyond the permissive licencing on the project.</p>
+</dd>
+<dt>gt</dt>
+<dd>
+<p>There is a large spread of table generation packages in Pharma, but several Pharma companies (Roche and GSK – add links to their issues before pub) have publicly been exploring extensions that would allow the use of gt in TLG generation for CSRs. No legal agreement exists beyond the permissive licencing on the project.</p>
+</dd>
+<dt>pkglite</dt>
+<dd>
+<p>Submitting code to the FDA requires collapsing the contents into text files with restrictive formats. pkglite exists to collapse and reconstitute an R package before and after the eCTD submission portal. pkglite uses a copy-left license, and copyright is owned by Merck. No legal agreement exists beyond the copy-left licencing on the project.</p>
+</dd>
+<dt>admiral</dt>
+<dd>
+<p>admiral is an R package for creating ADaM datasets. The copyright is held between Roche and GSK, and it is permissively licensed. A contract exists between Roche and GSK on their collaboration model. Other Pharma’s have contributed and offered to extend admiral without legal contracts in place on the original codebase.</p>
+</dd>
+</dl>
+<p>The examples above were intended to highlight that the majority of R packages used by Pharma companies are done so without legal contracts in place, beyond the license of the project, even when some collaboration takes place.</p>
+<p>It remains a discussion point though whether licenses are required, and the decision to create a license may become relevant if companies want to formally pool resources. It’s important to note that with permissively license projects, it is possible that if two entities want to take a package in different directions, they are able to by forking the project. So, contributions to another entities package are not lost to the contributing company.</p>
+<p>Contribution models</p>
+</section>
+<section id="the-risks-of-open-sourcing" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="the-risks-of-open-sourcing"><span class="header-section-number">3.9</span> The risks of open-sourcing</h2>
+<p>One open question is often how does open-sourcing open a company up to liability, indemnity and warranties. We previously discussed CLA bots, as a mechanism to reinforce the need for contributions to be original, and never cannibalised from another project. For remaining risks from others using an open sourced codebase, licenses will include some language. As an example, 50% of the MIT license is devoted to this topic with the following working:</p>
+<blockquote class="blockquote">
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+</blockquote>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-Cont2016" class="csl-entry" role="doc-biblioentry">
+Contreras, Jorge. 2016. <span>“Pre-Competition.”</span> <em>North Corolina Law Review</em> 95 (1): Article 3.
+</div>
+<div id="ref-LawArising" class="csl-entry" role="doc-biblioentry">
+Law Insider. 2022. <span>“Arising Intellectual Property Definition.”</span>
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./using.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Using open source</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./contributors.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Contributors</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>

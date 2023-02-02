@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>End-to-End Open-source Collaboration Guidance - 2&nbsp; Using open source</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./releasing.html" rel="next">
+<link href="./why.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Using open source</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./assets/phuse.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">End-to-End Open-source Collaboration Guidance</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/phuse-org/E2E-OS-Guidance" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="./End-to-End-Open-source-Collaboration-Guidance.pdf" title="Download PDF" class="sidebar-tool px-1"><i class="bi bi-file-pdf"></i></a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=|url|" title="LinkedIn" class="sidebar-tool px-1"><i class="bi bi-linkedin"></i></a>
+</div>
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Guidance scope and purpose</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./definitions.html" class="sidebar-item-text sidebar-link">Definitions</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./why.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Open source: the what and why</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./using.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Using open source</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./releasing.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Releasing open source</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./contributors.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Contributors</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#what-is-the-open-source-health-of-the-package" id="toc-what-is-the-open-source-health-of-the-package" class="nav-link active" data-scroll-target="#what-is-the-open-source-health-of-the-package"><span class="toc-section-number">2.1</span>  What is the open-source health of the package?&nbsp;</a></li>
+  <li><a href="#how-can-i-see-the-activity-of-an-open-source-project" id="toc-how-can-i-see-the-activity-of-an-open-source-project" class="nav-link" data-scroll-target="#how-can-i-see-the-activity-of-an-open-source-project"><span class="toc-section-number">2.2</span>  How can I see the activity of an open-source project?&nbsp;</a></li>
+  <li><a href="#how-active-are-the-community-behind-a-project" id="toc-how-active-are-the-community-behind-a-project" class="nav-link" data-scroll-target="#how-active-are-the-community-behind-a-project"><span class="toc-section-number">2.3</span>  How active are the community behind a project?&nbsp;</a></li>
+  <li><a href="#how-do-i-find-open-source-projects" id="toc-how-do-i-find-open-source-projects" class="nav-link" data-scroll-target="#how-do-i-find-open-source-projects"><span class="toc-section-number">2.4</span>  How do I find open-source projects?&nbsp;</a></li>
+  <li><a href="#what-do-i-do-if-i-see-a-project-i-could-use-but-it-needs-modification-for-my-use-case" id="toc-what-do-i-do-if-i-see-a-project-i-could-use-but-it-needs-modification-for-my-use-case" class="nav-link" data-scroll-target="#what-do-i-do-if-i-see-a-project-i-could-use-but-it-needs-modification-for-my-use-case"><span class="toc-section-number">2.5</span>  What do I do if I see a project I could use, but it needs modification for my use case?&nbsp;</a></li>
+  <li><a href="#what-can-help-me-understand-the-risks-around-using-an-open-source-project" id="toc-what-can-help-me-understand-the-risks-around-using-an-open-source-project" class="nav-link" data-scroll-target="#what-can-help-me-understand-the-risks-around-using-an-open-source-project"><span class="toc-section-number">2.6</span>  What can help me understand the risks around using an open-source project?&nbsp;</a></li>
+  <li><a href="#licenses-using-a-project" id="toc-licenses-using-a-project" class="nav-link" data-scroll-target="#licenses-using-a-project"><span class="toc-section-number">2.7</span>  Licenses: using a project&nbsp;</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Using open source</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="what-is-the-open-source-health-of-the-package" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="what-is-the-open-source-health-of-the-package"><span class="header-section-number">2.1</span> What is the open-source health of the package?&nbsp;</h2>
+<p>The communities that maintain and build open-source packages are diverse, and there are no set conventions on how they are maintained, resourced, and governed. Looking at metrics individually could be misleading – e.g., if a project has had no activity for 12 months, is that because the product has been abandoned/superseded, or could it be it had a small well-defined scope and is now stable and feature complete? The following section is a non-exhaustive discussion of topics relevant when using open-source data science projects.&nbsp;</p>
+</section>
+<section id="how-can-i-see-the-activity-of-an-open-source-project" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="how-can-i-see-the-activity-of-an-open-source-project"><span class="header-section-number">2.2</span> How can I see the activity of an open-source project?&nbsp;</h2>
+<p>Many, but not all, open-source projects are on github.com or gitlab.com. On github.com, every repo contains a tab called Insights, from where you can see information on the people who contributed lines of code to a project. Of a particular interest might be the Contributor tab within Insights, an example screenshot of the dplyr R package contributor page is in <a href="#fig-dplyr">Figure&nbsp;<span>2.1</span></a>.&nbsp;&nbsp;</p>
+<p>Some sites like openpharma.pharmaverse.org (specific to R and python packages in pharma) and OSS Insights (<a href="https://ossinsight.io/" class="uri">https://ossinsight.io/</a>; powerful tool for any project on GitHub) also provide more specific insights into the community engagement behind each project hosted on <a href="https://github.com/">github.com</a>.&nbsp;</p>
+<div id="fig-dplyr" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="assets/ghdplyr.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2.1: Screenshot from Insight tab for the dplyr R package</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="how-active-are-the-community-behind-a-project" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="how-active-are-the-community-behind-a-project"><span class="header-section-number">2.3</span> How active are the community behind a project?&nbsp;</h2>
+<p>Projects can go through lifecycles, so activity on a repo could have a variety of positive or negative implications. A project could have almost no active community in terms of recent contributions or response to issues, much like the R package survival (<a href="https://github.com/therneau/survival" class="uri">https://github.com/therneau/survival</a>), yet be a stable and critical package in R installations. Alternatively, a lack of activity could indicate a package is abandoned or deprecated. CROSS LINK LUFECYCLES</p>
+<p>The community behind a project is also not limited to the people that contribute code. Users can also engage with a project via giving feedback via mechanisms like GitHub issues, emailing authors or engaging in discussions on GitHub issues. <a href="#fig-teal">Figure&nbsp;<span>2.2</span></a> is an example of an issue page for the teal R package. The figure shows that teal has 24 open issues, and 266 closed issues. Small speech bubbles on the right of the figure show discussion have occurred on some issues. By looking through the issues, subjective impressions on community health can be made, for instance whether it’s a few people giving feedback and one person developing, does it have stale issues no-one replies to, or does it have a lively community engaged in discussion and coordination.</p>
+<div id="fig-teal" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="assets/teal.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2.2: An example screenshot of the R package teal’s issue page</figcaption><p></p>
+</figure>
+</div>
+<p>Packages can also be open sourced without having the place they develop the code exposed to the general public. An example is the randomForest package (<a href="https://www.stat.berkeley.edu/~breiman/RandomForests/">stat.berkeley.edu/~breiman/RandomForests</a>), which is an open sourced (GPL-2/3) R package where the source code of the releases is open sourced for use, but the package authors do not give users access to view the place where they develop code. This does not mean the quality of the code is inferior, but does indicate there is an additional barrier to engaging with the package development as the first step would be to contact the authors.&nbsp;&nbsp;</p>
+<p>Some things to consider when trying to establish the activity of a community are:&nbsp;</p>
+<ul>
+<li><p>How many individuals contributed to the project?&nbsp;</p></li>
+<li><p>What is the spread in contributions? What is the size of the ‘core’ group that contribute the majority of the code? What is the spread of commits – is it highly skewed to 1 or 2 people contributing?&nbsp;</p></li>
+<li><p>What is the recent and trends in commit activity? Is it currently active, formerly or is yet to become active?&nbsp;</p></li>
+<li><p>How many open and closed issues are there? If it’s a low number, is that in line with the age and expected use of the project?&nbsp;</p></li>
+<li><p>Are there ‘stale’ open issues, where issues remain open for months or years? Are many of these stale issues with comments, suggesting some discussion, or absent of comments suggesting there is no feedback loop present between issues and the codebase? A thing to also look for is whether closed issues are resolved, as some projects use bots to automatically close stale issues.&nbsp;</p></li>
+</ul>
+</section>
+<section id="how-do-i-find-open-source-projects" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="how-do-i-find-open-source-projects"><span class="header-section-number">2.4</span> How do I find open-source projects?&nbsp;</h2>
+<p>Numerous methods exist to find projects. Specific to R projects, the following sources exist:&nbsp;</p>
+<ul>
+<li><p><a href="http://pharmaverse.org">pharmaverse.org</a>: opinionated/curated effort to provide end-to-end tools for clinical reporting.&nbsp;</p></li>
+<li><p><a href="http://openpharma.pharmaverse.org" class="uri">http://openpharma.pharmaverse.org</a>: un-opinionated tracker of packages built by pharma for pharma use cases. It also and indexes and provides package metadata in a dashboard, and provides metadata to pharmaverse.org.&nbsp;</p></li>
+<li><p><a href="http://rseek.org">rseek.org</a>: Google filter for R relevant content.&nbsp;</p></li>
+<li><p><a href="http://rinpharma.com/publication">rinpharma.com/publication</a>: the proceedings of the R/Pharma conference contain many relevant projects.&nbsp;</p></li>
+</ul>
+</section>
+<section id="what-do-i-do-if-i-see-a-project-i-could-use-but-it-needs-modification-for-my-use-case" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="what-do-i-do-if-i-see-a-project-i-could-use-but-it-needs-modification-for-my-use-case"><span class="header-section-number">2.5</span> What do I do if I see a project I could use, but it needs modification for my use case?&nbsp;</h2>
+<p>Using R packages as an example, if your analysis plan requires creating a Kaplan Meier plot, you could implement this using open code you program using R base plotting functions. Alternatively, you could introduce a dependency on a package that provides that functionality as a parameterised function, like <a href="https://github.com/kassambara/survminer/">survminer</a>, <a href="https://github.com/openpharma/visR/">visR</a> or <a href="https://github.com/insightsengineering/tern/">tern</a>. Occasionally an existing package may be missing a feature you want, as can be derived from the presence of at least 3 R packages with a Kaplan Meier plotting function. In such cases, you may need to extend, or start a new package.&nbsp;&nbsp;&nbsp;</p>
+<p>In the case of wanting to change default behaviour of package beyond what is possible in the current function, the user has several options if an open-source license is specified – ranging from extending the package function to meet your needs, through to initiating a new package. It can be difficult to decide whether to extend an existing package, or whether it may be worth starting a new one, some resources to help understand how to contribute to a new package:&nbsp;</p>
+<ul>
+<li><p>A blog post by Jim Hester on contributing to the tidyverse: <a href="https://www.tidyverse.org/blog/2017/08/contributing/" class="uri">https://www.tidyverse.org/blog/2017/08/contributing/</a>&nbsp;</p></li>
+<li><p>Many packages have a CONTRIBUTING.md file, or mention in the README.md, how you can contribute. They may also be a dedicated tag for issues discussing new features (e.g.&nbsp;'enhancements').&nbsp;</p></li>
+</ul>
+</section>
+<section id="what-can-help-me-understand-the-risks-around-using-an-open-source-project" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="what-can-help-me-understand-the-risks-around-using-an-open-source-project"><span class="header-section-number">2.6</span> What can help me understand the risks around using an open-source project?&nbsp;</h2>
+<p>Risk can come from several domains including;&nbsp;&nbsp;</p>
+<ul>
+<li><p>Security, e.g.&nbsp;it has malicious code,&nbsp;</p></li>
+<li><p>Quality, the package has poor documentation and code is unreliable.&nbsp;</p></li>
+<li><p>Accuracy, the package does not correctly reference what it does, or implements it incorrectly.&nbsp;&nbsp;</p></li>
+</ul>
+<p>The <a href="https://pharmar.org">R validation hub</a> is a pan-pharma organisation, that aims to coordinate between pharma companies how the validation (and by extension risk) in R packages is undertaken and documented. Of particular relevance is the <a href="https://github.com/pharmaR/case_studies">Case Studies repository</a>, which contains examples from Roche, Merck and Novartis (as of July 2022) on how they approach validation and risk mitigation. The R Validation Hub is also continuing work on the <a href="https://github.com/pharmaR/risk_assessment">Risk Assessment App</a>, which aims to provide an application that will surface metrics to a user to help evaluate an R package.&nbsp;</p>
+<p>Roche has also open sourced a github-action called <a href="https://github.com/marketplace/actions/r-package-validation-report">thevalidatoR, which is available on Github Marketplace</a>, which will generate a PDF with the unit testing results, as well as a traceability of matrix of documentation to tested functionality against a standard rocker R container.</p>
+</section>
+<section id="licenses-using-a-project" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="licenses-using-a-project"><span class="header-section-number">2.7</span> Licenses: using a project&nbsp;</h2>
+<p>The licence of projects you depend on, particularly if you incorporate the source code into your compiled/shared product, can have drastic effects on what you can do with your project. It is always important to seek in-house counsel advice on your companies position on different license types.&nbsp;&nbsp;</p>
+<p>As a general guidance:&nbsp;</p>
+<ul>
+<li>There are permissive licenses that allow people to use a project in almost any way, through to copy-left licenses that prevent distributing and, in some cases, monetizing any project that incorporates the dependency into its codebase.&nbsp;&nbsp;</li>
+</ul>
+<!-- -->
+<ul>
+<li>Two key resources to understand license types are <a href="https://choosealicense.com/" class="uri">https://choosealicense.com/</a> and <a href="https://opensource.org/licenses" class="uri">https://opensource.org/licenses</a>.&nbsp;&nbsp;</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./why.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Open source: the what and why</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./releasing.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Releasing open source</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>

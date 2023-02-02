@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="PhUSE Working Group">
 
-<title>End-to-End Open-source Collaboration Guidance</title>
+<title>End-to-End Open-source Collaboration Guidance - 1&nbsp; Open source: the what and why</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -31,7 +49,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./definitions.html" rel="next">
+<link href="./using.html" rel="next">
+<link href="./definitions.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -70,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">End-to-End Open-source Collaboration Guidance</h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Open source: the what and why</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -103,7 +122,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">Guidance scope and purpose</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Guidance scope and purpose</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -113,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./why.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Open source: the what and why</span></a>
+  <a href="./why.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Open source: the what and why</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -141,80 +160,40 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#guidance-scope-and-purpose" id="toc-guidance-scope-and-purpose" class="nav-link active" data-scroll-target="#guidance-scope-and-purpose">Guidance scope and purpose</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">End-to-End Open-source Collaboration Guidance</h1>
-<p class="subtitle lead">Data Visualisation &amp; Open Source Technology Working Group</p>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Open source: the what and why</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>PhUSE Working Group </p>
-          </div>
-  </div>
     
   
     
   </div>
   
-<div>
-  <div class="abstract">
-    <div class="abstract-title">Abstract</div>
-    This whitepaper provides guidance on the use of Open-Source Software (OSS), as well as collaboration on and creation of open-source projects used by data scientists in clinical reporting workflows
-  </div>
-</div>
 
 </header>
 
-<section id="guidance-scope-and-purpose" class="level1 unnumbered">
-<h1 class="unnumbered">Guidance scope and purpose</h1>
-<p>The primary aim of this collaboration is to provide guidance and link out to more information. In this whitepaper, R packages are referenced as an example OSS project that is a focal point today in clinical reporting, but the principles extend to other libraries in python, Julia, javascript etc. The following topics are covered in this white paper:&nbsp;</p>
-<p><strong>Using open source</strong>&nbsp;</p>
-<ul>
-<li><p>Relevance of different licence types&nbsp;</p></li>
-<li><p>Watchouts on governance models and assessing risk&nbsp;</p></li>
-<li><p>Landscape of tools available for vulnerability detection, validation/qualification/risk and enforcing licence policies, with particular reference to R-specific tools&nbsp;</p></li>
-</ul>
-<p><strong>Releasing open-source</strong>&nbsp;</p>
-<ul>
-<li>A summary and recommendation of licence types, with particular focus on permissive vs copyleft licences and the ramifications on code built on top of your project Relevance of licences present in dependencies, direct vs transitive dependencies, and the issues around compiling with dependencies that could occur in something like a public shiny app&nbsp;</li>
-</ul>
-<!-- -->
-<ul>
-<li><p>Landscape of places to place open-source projects and build collaborative communities&nbsp;</p></li>
-<li><p>Pros/benefits and cons/risks for companies to open-source clinical reporting codebases&nbsp;</p></li>
-<li><p>Governance models for open-source projects with reference to their use today across clinical reporting collaborations&nbsp;</p></li>
-<li><p>Survey and summary of contract types present where intellectual property and copyright is shared between companies&nbsp;</p></li>
-<li><p>Tools available to understand the general health of projects (e.g.&nbsp;LFX tools), with specific reference to R extensions (e.g.&nbsp;metacran, riskmetric, openpharma)&nbsp;</p></li>
-</ul>
-<!-- -->
-<ul>
-<li><p>Examples of release models, particularly where projects have inter-project dependencies (e.g.&nbsp;tidyverse de-coupled release model vs bioconductor cohort release model)&nbsp;</p></li>
-<li><p>Tools for releasing and maintaining projects, with particular reference to tools for R packages&nbsp;</p></li>
-</ul>
-</section>
-<section id="section" class="level1">
-<h1></h1>
+<p>‘Open Source’ software is software covered by a license that legally allows access and inspection of the software’s source code. The many varieties of open-source licenses determine what you can then do with the software’s source code, i.e.&nbsp;copy, modify, contribute or redistribute. Being able to view and then do something with source code wasn’t always so. The term ‘open source’ has been in use at least since the 1990’s <span class="citation" data-cites="Peterson2018">(<a href="references.html#ref-Peterson2018" role="doc-biblioref">Christine Peterson 2018</a>)</span> and the principles behind the term pre-date computer software. Thus, as long as there has been source code there have been efforts to make it ‘open source’. As computing systems became widely adopted in universities and beyond, so to the value of freely accessing the source code of the software they ran became apparent. This effort was described as making software ‘free’ by Richard Stallman and formalised by the creation of the Free Software Foundation in 1985, including the creation of a legally enforceable licenses (the GNU Public License) to enshrine source code as ‘free’, that is, having the free-dom to access. Although this effort was the genesis of today’s open-source communities, many people mistakenly understood ‘free’ to mean gratis, which was incorrect: most open-source licences allow the software to be sold for a fee <span class="citation" data-cites="OSI">(<a href="references.html#ref-OSI" role="doc-biblioref">OSI 2018</a>)</span>. As is the case, even if the main goal of open source is not creating software gratis, it so happens that the majority of open-source software is made available at no cost. Regardless of whether it is sold for a fee or not, the term ‘open source’ is the preferred term by most with respect to software with a license that allows access to the source code.</p>
+<p>Readers coming from the pharmaceutical industry probably perceive a contradiction here: how can software which is typically gratis to use, have any intrinsic value to either business or private users? Fair enough: this industry depends on capital investment which then depends on retaining the details of their drugs and production secret. The difference lies in the utility of (some) software, versus, in this example, a drug or therapy. Certain categories of software enable the creation of new value. Obvious examples being programming languages enabling creation of specialized applications which can support a specific business process, e.g.&nbsp;C, Python, R and many others. The ability to use and improve these open source languages freely accelerate in multiple dimensions the ability to create business value, e.g.&nbsp;specialized smart phone apps that offers a service to end-users. Imagine if you have an idea for a smart phone app, but before you can write a line of code, you need to buy a license to install that language. And after investing the time and money to access this language you realise it doesn’t work as well as you need for your particular app. Or worse yet, it has a bug which renders it unfit for your purpose. Little chance you can resolve this quickly. Open-source software does not have these restrictions so you can focus all your resources on end-user value, not the tools needed for creation. The drugs and therapies manufactured by the pharmaceutical industry are the equivalent of a smart phone app: they provide end-user value. It’s sound business logic to open source the tools used to create these products: remove the restrictions to creating drugs and enable each company to sharpen their focus on developing and delivering them.</p>
 
 
-</section>
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-Peterson2018" class="csl-entry" role="doc-biblioentry">
+Christine Peterson. 2018. <span>“How i Coined the Term Open Source.”</span>
+</div>
+<div id="ref-OSI" class="csl-entry" role="doc-biblioentry">
+OSI. 2018. <span>“History of the OSI.”</span>
+</div>
+</div>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -352,10 +331,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./definitions.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Definitions</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./definitions.html" class="pagination-link">
-        <span class="nav-page-text">Definitions</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./using.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Using open source</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
