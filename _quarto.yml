@@ -30,6 +30,10 @@ format:
     theme: cosmo
   pdf:
     documentclass: scrreprt
+  docx:
+    toc: true
+    number-sections: true
+    highlight-style: github
 
 
 
