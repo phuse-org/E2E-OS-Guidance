@@ -253,7 +253,7 @@ div.csl-indent {
 <h2 data-number="3.2" class="anchored" data-anchor-id="preparing-for-release"><span class="header-section-number">3.2</span> Preparing for release</h2>
 <section id="when-is-a-good-time-to-open-source" class="level3" data-number="3.2.1">
 <h3 data-number="3.2.1" class="anchored" data-anchor-id="when-is-a-good-time-to-open-source"><span class="header-section-number">3.2.1</span> When is a good time to open source?</h3>
-<p>As a general rule <em>arising IP</em><span class="citation" data-cites="LawArising"><sup><a href="references.html#ref-LawArising" role="doc-biblioref">2</a></sup></span>, that is IP generated as part of the project, is simpler to handle than <em>background IP</em> that already exists. There is often a benefit to define what you want to do, decide if it would be open sourced, and if so, then start it in an open-source setting. This also helps to encourage defining a clear scope from day one, and encourage others to engage early rather than initiate additional projects that later may not be compatible without significant re-factoring.</p>
+<p>As a general rule <em>arising IP</em><span class="citation" data-cites="LawArising"><sup><a href="references.html#ref-LawArising" role="doc-biblioref">2</a></sup></span>, that is IP generated as part of the project, is simpler to handle than <em>background IP</em> that already exists. There is often a benefit to define what you want to do, decide if it would be open sourced, and if so, start it in an open-source setting. This also helps to encourage defining a clear scope from day one, and encourage others to engage early rather than initiate additional projects that later may not be compatible without significant re-factoring.</p>
 </section>
 <section id="does-it-matter-where-you-put-a-package-on-github.com" class="level3" data-number="3.2.2">
 <h3 data-number="3.2.2" class="anchored" data-anchor-id="does-it-matter-where-you-put-a-package-on-github.com"><span class="header-section-number">3.2.2</span> Does it matter where you put a package on github.com?</h3>
@@ -262,21 +262,21 @@ div.csl-indent {
 <ul>
 <li>Personal Github orgs
 <ul>
-<li>diffdf (<a href="https://github.com/gowerc/diffdf">gowerc/diffdf</a>) and survival (<a href="https://github.com/therneau/survival">therneau/survival</a>) are examples of two repositories used in pharma hosted in Github orgs belonging to a specific individual</li>
+<li>diffdf (<a href="https://github.com/gowerc/diffdf">gowerc/diffdf</a>) and survival (<a href="https://github.com/therneau/survival">therneau/survival</a>) are examples of two repositories used in pharma hosted in Github orgs belonging to a specific individual.</li>
 </ul></li>
 <li>Project/Initiative Github orgs
 <ul>
-<li><a href="https://github.com/openpharma">openpharma</a>: While openpharma has a dashboard and metadata pipeline that is agnostic to where a package comes from, it also will house packages that do not want to be associated with a specific company or organisation</li>
-<li><a href="https://github.com/pharmaverse">pharmaverse</a>: A sub-set of the pharmaverse clinical reporting repositories are also hosted on the pharmaverse Github org</li>
-<li><a href="pharmaR">pharmaR</a>: Houses repositories from the R Validation Hub working group</li>
+<li><a href="https://github.com/openpharma">openpharma</a>: While openpharma has a dashboard and metadata pipeline that is agnostic to where a package comes from, it also will house packages that do not want to be associated with a specific company or organisation.</li>
+<li><a href="https://github.com/pharmaverse">pharmaverse</a>: A sub-set of the pharmaverse clinical reporting repositories are also hosted on the pharmaverse Github org.</li>
+<li><a href="pharmaR">pharmaR</a>: Houses repositories from the R Validation Hub working group.</li>
 </ul></li>
 <li>Company Github orgs
 <ul>
 <li>Many companies maintain Github orgs either at the company or department in a company level, like <a href="https://github.com/GSK-Biostatistics">GSK-Biostatistics</a>, <a href="https://github.com/Roche">Roche</a>, <a href="https://github.com/Genentech">Genentech</a>, <a href="https://github.com/Novartis">Novartis</a></li>
 </ul></li>
-<li>Organisation Github orgs
+<li>Organisation Github orgs.
 <ul>
-<li><a href="https://github.com/phuse-org">phuse-org</a>: PHUSE projects and working groups from PHUSE</li>
+<li><a href="https://github.com/phuse-org">phuse-org</a>: PHUSE projects and working groups from PHUSE.</li>
 <li><a href="https://github.com/ropensci">ropensci</a>, <a href="https://github.com/ropenscilabs">ropenscilabs</a>, <a href="https://github.com/ropensci-docs">ropensci-docs</a>, etc: rOpenSci maintains several GitHub orgs, with rOpenSci housing mature R packages contributed by their staff, or peer-reviewed.</li>
 </ul></li>
 </ul>
@@ -299,14 +299,14 @@ div.csl-indent {
 <section id="licences-releasing-a-project" class="level2" data-number="3.5">
 <h2 data-number="3.5" class="anchored" data-anchor-id="licences-releasing-a-project"><span class="header-section-number">3.5</span> Licences: releasing a project</h2>
 <p>Ultimately, the licence used for a project would require in-house counsel guidance on what licence is preferred.</p>
-<p>All code open-sourced should have a licence. The licence has a standard location of being a text file called ‘LICENSE’ in the root of the project folder, or a markdown file called ‘LICENSE.md’. Of particular note is that R packages often have the licence specified in the R specific location of the DESCRIPTION file, or may have it in both the standard and R specific locations (in rare cases these can also contradict so it is important to read both).</p>
+<p>All code open-sourced should have a licence. The licence has a standard location of being a text file called ‘LICENSE’ in the root of the project folder, a text file called ‘LICENSE.txt’, or a markdown file called ‘LICENSE.md’. Of particular note is that R packages often have the licence specified in the R specific location of the DESCRIPTION file, or may have it in both the standard and R specific locations (in rare cases these can also contradict so it is important to read both).</p>
 <p>Generally, permissive licences are more common in clinical reporting, with the majority of pharmaverse R packages using an <a href="https://choosealicense.com/licenses/mit/">MIT</a> or <a href="https://choosealicense.com/licenses/apache-2.0/">Apache 2.0</a> license. These licences allow distribution, commercial use and modification. One primary difference between MIT and Apache 2.0 is that the latter has patent protection language and rules around trademark usage, and may be preferred in larger projects due to its focus on more explicitly spelling out the terms.</p>
 <p>As a general guidance, if the purpose of the project is to let future contributors freely use the code, MIT license is a concise permissive license to adopt. In the pharmaceutical industry, however, the patent of the code is often of concern in a post-competitive environment across companies, and thus an Apache 2.0 license could be more suitable. On the other hand, the copyleft license (e.g.&nbsp;GPLv2, GPLv3) demands any downstream derivatives to follow the same copyleft license of the source project and generally should be avoided. Sometimes, a company’s legal team might come up with their own license that is not listed as one of the approved open-source licenses. It is highly recommended to only use standard open-source licenses, as these are verified by the Open-Source Initiative, so others can easily understand the governance model of your project.</p>
-<p>It is highly recommended to select a suitable license from the project initiation, because a change in the license could impact many aspects of the project. With a permissive license, others have been granted permission to license modification from its inception. When under a permissive license, you could change to a license with more requirements, but this would not rescind the historical codebase that has a more permissive license.</p>
+<p>A licence is ideally one of the first commits made at project initiation, because a change in the license could impact many aspects of the project. With a permissive license, others have been granted permission to license modification from its inception. When under a permissive license, you could change to a license with more requirements, but this would not rescind the historical codebase that has a more permissive license.</p>
 </section>
 <section id="collaboration-and-governance-models" class="level2" data-number="3.6">
 <h2 data-number="3.6" class="anchored" data-anchor-id="collaboration-and-governance-models"><span class="header-section-number">3.6</span> Collaboration and governance models</h2>
-<p>Open-sourcing a project allows others to leverage the code, but the ultimate goal is often that the open-source community adopts and helps extend and evolve the project. How projects govern this shared development is diverse. A commonality across all projects is that the repository, and it’s main/production branch, will have some form of write access control, meaning a level of governance is present even if it’s not formalised.</p>
+<p>Open-sourcing a project allows others to leverage the code, but the ultimate goal is often that the open-source community adopts and helps extend and evolve the project. How projects govern this shared development is diverse. A commonality across all projects is that the repository, and it’s <code>main</code>/production branch, will have some form of write access control, meaning a level of governance is present even if it’s not formalised.</p>
 </section>
 <section id="what-different-governance-models-exist-for-open-source" class="level2" data-number="3.7">
 <h2 data-number="3.7" class="anchored" data-anchor-id="what-different-governance-models-exist-for-open-source"><span class="header-section-number">3.7</span> What different governance models exist for open source?</h2>
@@ -318,7 +318,7 @@ div.csl-indent {
 </dd>
 <dt>Steering Group</dt>
 <dd>
-<p>This category refers to a project where the ultimate decision-making capacity is shared between more than one entity. The structure of the group and manner in which the group makes decisions can vary. The name used to refer to the group can also vary, examples include “governing board”, “steering group”, and “council”. A famous example includes the relatively oligarchical Python Steering Council from 2018, however many projects prefer simple democracies, or merely that a sufficient number of approvals from among the contributing entities are sufficient to approve acceptance to the production branch. Within pharmaverse.org, admiral is an example of this governance model.</p>
+<p>This category refers to a project where the ultimate decision-making capacity is shared between more than one entity. The structure of the group and manner in which the group makes decisions can vary. The name used to refer to the group can also vary, examples include “governing board”, “steering group”, and “council”. A famous example includes the relatively oligarchical Python Steering Council from 2018, however many projects prefer simple democracies, or merely that a specific number of approvals from among the contributing entities are required to approve acceptance to the production branch. Within pharmaverse.org, admiral is an example of this governance model.</p>
 </dd>
 <dt>Do-ocracy</dt>
 <dd>

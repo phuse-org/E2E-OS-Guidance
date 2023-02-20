@@ -174,12 +174,14 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#what-is-the-open-source-health-of-the-package" id="toc-what-is-the-open-source-health-of-the-package" class="nav-link active" data-scroll-target="#what-is-the-open-source-health-of-the-package"><span class="toc-section-number">2.1</span>  What is the open-source health of the package?&nbsp;</a></li>
-  <li><a href="#how-can-i-see-the-activity-of-an-open-source-project" id="toc-how-can-i-see-the-activity-of-an-open-source-project" class="nav-link" data-scroll-target="#how-can-i-see-the-activity-of-an-open-source-project"><span class="toc-section-number">2.2</span>  How can I see the activity of an open-source project?&nbsp;</a></li>
-  <li><a href="#how-active-are-the-community-behind-a-project" id="toc-how-active-are-the-community-behind-a-project" class="nav-link" data-scroll-target="#how-active-are-the-community-behind-a-project"><span class="toc-section-number">2.3</span>  How active are the community behind a project?&nbsp;</a></li>
-  <li><a href="#how-do-i-find-open-source-projects" id="toc-how-do-i-find-open-source-projects" class="nav-link" data-scroll-target="#how-do-i-find-open-source-projects"><span class="toc-section-number">2.4</span>  How do I find open-source projects?&nbsp;</a></li>
-  <li><a href="#what-do-i-do-if-i-see-a-project-i-could-use-but-it-needs-modification-for-my-use-case" id="toc-what-do-i-do-if-i-see-a-project-i-could-use-but-it-needs-modification-for-my-use-case" class="nav-link" data-scroll-target="#what-do-i-do-if-i-see-a-project-i-could-use-but-it-needs-modification-for-my-use-case"><span class="toc-section-number">2.5</span>  What do I do if I see a project I could use, but it needs modification for my use case?&nbsp;</a></li>
-  <li><a href="#what-can-help-me-understand-the-risks-around-using-an-open-source-project" id="toc-what-can-help-me-understand-the-risks-around-using-an-open-source-project" class="nav-link" data-scroll-target="#what-can-help-me-understand-the-risks-around-using-an-open-source-project"><span class="toc-section-number">2.6</span>  What can help me understand the risks around using an open-source project?&nbsp;</a></li>
-  <li><a href="#licences-using-a-project" id="toc-licences-using-a-project" class="nav-link" data-scroll-target="#licences-using-a-project"><span class="toc-section-number">2.7</span>  Licences: using a project&nbsp;</a></li>
+  <li><a href="#how-can-i-see-the-activity-of-an-open-source-project" id="toc-how-can-i-see-the-activity-of-an-open-source-project" class="nav-link" data-scroll-target="#how-can-i-see-the-activity-of-an-open-source-project"><span class="toc-section-number">2.2</span>  How can I see the activity of an open-source project?&nbsp;</a>
+  <ul class="collapse">
+  <li><a href="#how-active-are-the-community-behind-a-project" id="toc-how-active-are-the-community-behind-a-project" class="nav-link" data-scroll-target="#how-active-are-the-community-behind-a-project"><span class="toc-section-number">2.2.1</span>  How active are the community behind a project?&nbsp;</a></li>
+  </ul></li>
+  <li><a href="#how-do-i-find-open-source-projects" id="toc-how-do-i-find-open-source-projects" class="nav-link" data-scroll-target="#how-do-i-find-open-source-projects"><span class="toc-section-number">2.3</span>  How do I find open-source projects?&nbsp;</a></li>
+  <li><a href="#what-do-i-do-if-i-see-a-project-i-could-use-but-it-needs-modification-for-my-use-case" id="toc-what-do-i-do-if-i-see-a-project-i-could-use-but-it-needs-modification-for-my-use-case" class="nav-link" data-scroll-target="#what-do-i-do-if-i-see-a-project-i-could-use-but-it-needs-modification-for-my-use-case"><span class="toc-section-number">2.4</span>  What do I do if I see a project I could use, but it needs modification for my use case?&nbsp;</a></li>
+  <li><a href="#what-can-help-me-understand-the-risks-around-using-an-open-source-project" id="toc-what-can-help-me-understand-the-risks-around-using-an-open-source-project" class="nav-link" data-scroll-target="#what-can-help-me-understand-the-risks-around-using-an-open-source-project"><span class="toc-section-number">2.5</span>  What can help me understand the risks around using an open-source project?&nbsp;</a></li>
+  <li><a href="#licences-using-a-project" id="toc-licences-using-a-project" class="nav-link" data-scroll-target="#licences-using-a-project"><span class="toc-section-number">2.6</span>  Licences: using a project&nbsp;</a></li>
   </ul>
 </nav>
     </div>
@@ -205,11 +207,11 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="what-is-the-open-source-health-of-the-package" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="what-is-the-open-source-health-of-the-package"><span class="header-section-number">2.1</span> What is the open-source health of the package?&nbsp;</h2>
-<p>The communities that maintain and build open-source packages are diverse, and there are no set conventions on how they are maintained, resourced, and governed. Looking at metrics individually could be misleading – e.g., if a project has had no activity for 12 months, is that because the product has been abandoned/superseded, or could it be it had a small well-defined scope and is now stable and feature complete? The following section is a non-exhaustive discussion of topics relevant when using open-source data science projects.&nbsp;</p>
+<p>The communities that maintain and build open-source packages are diverse, and there are no set conventions on how they are maintained, resourced, and governed. There are no universal magic metrics to summarise whether an OS project is <em>‘healthy’</em>; for example if a project has had no activity for 12 months, is that because the product has been abandoned/superseded, or could it be it had a small well-defined scope and is now stable and feature complete? The following section is a non-exhaustive discussion of topics relevant when using open-source data science projects.&nbsp;</p>
 </section>
 <section id="how-can-i-see-the-activity-of-an-open-source-project" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="how-can-i-see-the-activity-of-an-open-source-project"><span class="header-section-number">2.2</span> How can I see the activity of an open-source project?&nbsp;</h2>
-<p>Many, but not all, open-source projects are on github.com or gitlab.com. On github.com, every repo contains a tab called Insights, from where you can see information on the people who contributed lines of code to a project. Of a particular interest might be the Contributor tab within Insights, an example screenshot of the dplyr R package contributor page is in <a href="#fig-dplyr">Figure&nbsp;<span>2.1</span></a>.&nbsp;&nbsp;</p>
+<p>Many, but not all, open-source projects are on <a href="https://github.com">github.com</a> or <a href="https://gitlab.com">gitlab.com</a>. On github.com, every repo contains a tab called Insights, from where you can see information on the people who contributed lines of code to a project. Of a particular interest might be the Contributor tab within Insights, an example screenshot of the dplyr R package contributor page is in <a href="#fig-dplyr">Figure&nbsp;<span>2.1</span></a>.&nbsp;&nbsp;</p>
 <p>Some sites like openpharma.pharmaverse.org (specific to R and python packages in pharma) and OSS Insights (<a href="https://ossinsight.io/" class="uri">https://ossinsight.io/</a>; powerful tool for any project on GitHub) also provide more specific insights into the community engagement behind each project hosted on <a href="https://github.com/">github.com</a>.&nbsp;</p>
 <div id="fig-dplyr" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -217,9 +219,8 @@ ul.task-list li input[type="checkbox"] {
 <p></p><figcaption class="figure-caption">Figure&nbsp;2.1: Screenshot from Insight tab for the dplyr R package</figcaption><p></p>
 </figure>
 </div>
-</section>
-<section id="how-active-are-the-community-behind-a-project" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="how-active-are-the-community-behind-a-project"><span class="header-section-number">2.3</span> How active are the community behind a project?&nbsp;</h2>
+<section id="how-active-are-the-community-behind-a-project" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="how-active-are-the-community-behind-a-project"><span class="header-section-number">2.2.1</span> How active are the community behind a project?&nbsp;</h3>
 <p>The activity on a project does not tell you the quality and extent of use of a project. Two examples are:</p>
 <ul>
 <li>A project could have almost no active community in terms of recent contributions or response to issues, much like the R package survival (<a href="https://github.com/therneau/survival" class="uri">https://github.com/therneau/survival</a>), yet be a stable and critical package in R installations.</li>
@@ -242,28 +243,29 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Are there ‘stale’ open issues, where issues remain open for months or years? Are many of these stale issues with comments, suggesting some discussion, or absent of comments suggesting there is no feedback loop present between issues and the codebase? A thing to also look for is whether closed issues are resolved, as some projects use bots to automatically close stale issues.&nbsp;</p></li>
 </ul>
 </section>
-<section id="how-do-i-find-open-source-projects" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="how-do-i-find-open-source-projects"><span class="header-section-number">2.4</span> How do I find open-source projects?&nbsp;</h2>
+</section>
+<section id="how-do-i-find-open-source-projects" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="how-do-i-find-open-source-projects"><span class="header-section-number">2.3</span> How do I find open-source projects?&nbsp;</h2>
 <p>Numerous methods exist to find projects. Specific to R projects, the following sources exist:&nbsp;</p>
 <ul>
 <li><p><a href="http://pharmaverse.org">pharmaverse.org</a>: opinionated/curated effort to provide end-to-end tools for clinical reporting.&nbsp;</p></li>
 <li><p><a href="http://openpharma.pharmaverse.org" class="uri">http://openpharma.pharmaverse.org</a>: un-opinionated tracker of packages built by pharma for pharma use cases. It also and indexes and provides package metadata in a dashboard, and provides metadata to pharmaverse.org.&nbsp;</p></li>
-<li><p><a href="https://r-universe.dev/search/">R universe</a> for ecosystems of packages available from CRAN-like repositories. As an example, the Pharmaverse has the ‘bleeding edge’ of the main branches of all included R package available as a CRAN-like repository: https://pharmaverse.r-universe.dev/builds</p></li>
+<li><p>The <a href="https://r-universe.dev/search/">R universe</a> hosts ecosystems of packages in CRAN-like repositories. As an example, the Pharmaverse has the ‘bleeding edge’ of the main branches of all included R package available as a <a href="https://pharmaverse.r-universe.dev/builds">CRAN-like repository</a>.</p></li>
 <li><p><a href="http://rseek.org">rseek.org</a>: Google filter for R relevant content.&nbsp;</p></li>
 <li><p><a href="http://rinpharma.com/publication">rinpharma.com/publication</a>: the proceedings of the R/Pharma conference contain many relevant projects.&nbsp;</p></li>
 </ul>
 </section>
-<section id="what-do-i-do-if-i-see-a-project-i-could-use-but-it-needs-modification-for-my-use-case" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="what-do-i-do-if-i-see-a-project-i-could-use-but-it-needs-modification-for-my-use-case"><span class="header-section-number">2.5</span> What do I do if I see a project I could use, but it needs modification for my use case?&nbsp;</h2>
+<section id="what-do-i-do-if-i-see-a-project-i-could-use-but-it-needs-modification-for-my-use-case" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="what-do-i-do-if-i-see-a-project-i-could-use-but-it-needs-modification-for-my-use-case"><span class="header-section-number">2.4</span> What do I do if I see a project I could use, but it needs modification for my use case?&nbsp;</h2>
 <p>Using R packages as an example, if your analysis plan requires creating a Kaplan Meier plot, you could implement this using open code you program using R base plotting functions. Alternatively, you could introduce a dependency on a package that provides that functionality as a parameterised function, like <a href="https://github.com/kassambara/survminer/">survminer</a>, <a href="https://github.com/openpharma/visR/">visR</a> or <a href="https://github.com/insightsengineering/tern/">tern</a>. Occasionally an existing package may be missing a feature you want, as can be derived from the presence of at least 3 R packages with a Kaplan Meier plotting function. In such cases, you may need to extend, or start a new package.&nbsp;&nbsp;&nbsp;</p>
-<p>In the case of wanting to change default behaviour of package beyond what is possible in the current function, the user has several options if an open-source licence is specified – ranging from extending the package function to meet your needs, through to initiating a new package. It can be difficult to decide whether to extend an existing package, or whether it may be worth starting a new one, some resources to help understand how to contribute to a new package:&nbsp;</p>
+<p>When an existing tool is not a perfect fit, it can be difficult to decide whether to extend an existing package, or whether it may be worth starting a new one. Some resources to help understand how to contribute to a new package are:&nbsp;</p>
 <ul>
-<li><p>A blog post by Jim Hester on contributing to the tidyverse: <a href="https://www.tidyverse.org/blog/2017/08/contributing/" class="uri">https://www.tidyverse.org/blog/2017/08/contributing/</a>&nbsp;</p></li>
-<li><p>Many packages have a CONTRIBUTING.md file, or mention in the README.md, how you can contribute. They may also be a dedicated tag for issues discussing new features (e.g.&nbsp;'enhancements').&nbsp;</p></li>
+<li><p>A <a href="https://www.tidyverse.org/blog/2017/08/contributing/">blog post by Jim Hester on contributing to the tidyverse</a></p></li>
+<li><p>Many packages have a CONTRIBUTING.md file, or mention in the README.md, how you can contribute. They may also be a dedicated tag for issues discussing new features (e.g.&nbsp;<code>'enhancements'</code>).&nbsp;</p></li>
 </ul>
 </section>
-<section id="what-can-help-me-understand-the-risks-around-using-an-open-source-project" class="level2" data-number="2.6">
-<h2 data-number="2.6" class="anchored" data-anchor-id="what-can-help-me-understand-the-risks-around-using-an-open-source-project"><span class="header-section-number">2.6</span> What can help me understand the risks around using an open-source project?&nbsp;</h2>
+<section id="what-can-help-me-understand-the-risks-around-using-an-open-source-project" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="what-can-help-me-understand-the-risks-around-using-an-open-source-project"><span class="header-section-number">2.5</span> What can help me understand the risks around using an open-source project?&nbsp;</h2>
 <p>Risk can come from several domains including;&nbsp;&nbsp;</p>
 <ul>
 <li><p>Security, e.g.&nbsp;it has malicious code,&nbsp;</p></li>
@@ -271,11 +273,11 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Accuracy, the package does not correctly reference what it does, or implements it incorrectly.&nbsp;&nbsp;</p></li>
 </ul>
 <p>The <a href="https://pharmar.org">R validation hub</a> is a pan-pharma organisation, that aims to coordinate between pharma companies how the validation (and by extension risk) in R packages is undertaken and documented. Of particular relevance is the <a href="https://github.com/pharmaR/case_studies">Case Studies repository</a>, which contains examples from Roche, Merck and Novartis (as of July 2022) on how they approach validation and risk mitigation. The R Validation Hub also created <a href="https://www.pharmar.org/risk/"><code>riskmetric</code></a> as a tool to extract metrics relevant to validation, and is continuing work on the <a href="https://github.com/pharmaR/risk_assessment">Risk Assessment App</a>, which aims to provide an application that will surface these metrics to a user to help evaluate an R package.&nbsp;</p>
-<p>Roche has also open sourced a github-action called <a href="https://github.com/marketplace/actions/r-package-validation-report">thevalidatoR, which is available on Github Marketplace</a>, which will generate a PDF with the unit testing results, as well as a traceability of matrix of documentation to tested functionality against a standard rocker R container.</p>
+<p>Roche has also open sourced a github-action called <a href="https://github.com/marketplace/actions/r-package-validation-report">thevalidatoR, which is available on Github Marketplace</a>, which will generate a PDF with the unit testing results, as well as a traceability matrix of documentation against tested functionality in a specified container.</p>
 <p>The <a href="https://github.com/sonatype-nexus-community/oysteR"><code>oysteR</code></a> R package can help scan R projects for known vulnerabilities via a REST API interface into the vendor tool <em>OSS Index</em> from <em>sonatype</em>.</p>
 </section>
-<section id="licences-using-a-project" class="level2" data-number="2.7">
-<h2 data-number="2.7" class="anchored" data-anchor-id="licences-using-a-project"><span class="header-section-number">2.7</span> Licences: using a project&nbsp;</h2>
+<section id="licences-using-a-project" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="licences-using-a-project"><span class="header-section-number">2.6</span> Licences: using a project&nbsp;</h2>
 <p>The licence of projects you depend on, particularly if you incorporate the source code into your compiled/shared product, can have drastic effects on what you can do with your project. It is always important to seek in-house counsel advice on your companies position on different licence types.&nbsp;&nbsp;</p>
 <p>As a general guidance:&nbsp;</p>
 <ul>
