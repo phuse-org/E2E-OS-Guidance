@@ -124,8 +124,6 @@ The examples above were intended to highlight that the majority of R packages us
 
 It remains a discussion point though whether licenses are required, and the decision to create a license may become relevant if companies want to formally pool resources. It's important to note that with permissively license projects, it is possible that if two entities want to take a package in different directions, they are able to by forking the project. So, contributions to another entities package are not lost to the contributing company.
 
-Contribution models
-
 ## The risks of open-sourcing
 
 One open question is often how does open-sourcing open a company up to liability, indemnity and warranties. We previously discussed CLA bots, as a mechanism to reinforce the need for contributions to be original, and never cannibalised from another project. For remaining risks from others using an open sourced codebase, licenses will include some language. As an example, 50% of the MIT license is devoted to this topic with the following working:
