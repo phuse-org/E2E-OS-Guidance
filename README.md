@@ -9,6 +9,7 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
+[![Last update][update-shield]][update-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
@@ -30,8 +31,6 @@
     <a href="https://phuse-org.github.io/E2E-OS-Guidance/"><strong>Explore the guidance »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/phuse-org/E2E-OS-Guidance">View Demo</a>
-    ·
     <a href="https://github.com/phuse-org/E2E-OS-Guidance/issues">Report Bug or Mistake</a>
     ·
     <a href="https://github.com/phuse-org/E2E-OS-Guidance/issues">Suggest improvement</a>
@@ -101,6 +100,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [contributors-url]: https://github.com/phuse-org/E2E-OS-Guidance/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/phuse-org/E2E-OS-Guidance.svg?style=for-the-badge
 [forks-url]: https://github.com/phuse-org/E2E-OS-Guidance/network/members
+[update-shield]: https://img.shields.io/github/last-commit/phuse-org/E2E-OS-Guidance.svg?style=for-the-badge
+[update-url]: https://github.com/phuse-org/E2E-OS-Guidance
 [stars-shield]: https://img.shields.io/github/stars/phuse-org/E2E-OS-Guidance.svg?style=for-the-badge
 [stars-url]: https://github.com/phuse-org/E2E-OS-Guidance/stargazers
 [issues-shield]: https://img.shields.io/github/issues/phuse-org/E2E-OS-Guidance.svg?style=for-the-badge
