@@ -53,7 +53,7 @@ Numerous methods exist to find projects. Specific to R projects, the following s
 
 Using R packages as an example, if your analysis plan requires creating a Kaplan Meier plot, you could implement this using open code you program using R base plotting functions. Alternatively, you could introduce a dependency on a package that provides that functionality as a parameterised function, like [survminer](https://github.com/kassambara/survminer/), [visR](https://github.com/openpharma/visR/) or [tern](https://github.com/insightsengineering/tern/). Occasionally an existing package may be missing a feature you want, as can be derived from the presence of at least 3 R packages with a Kaplan Meier plotting function. In such cases, you may need to extend, or start a new package.   
 
-In the case of wanting to change default behaviour of package beyond what is possible in the current function, the user has several options if an open-source license is specified -- ranging from extending the package function to meet your needs, through to initiating a new package. It can be difficult to decide whether to extend an existing package, or whether it may be worth starting a new one, some resources to help understand how to contribute to a new package: 
+In the case of wanting to change default behaviour of package beyond what is possible in the current function, the user has several options if an open-source licence is specified -- ranging from extending the package function to meet your needs, through to initiating a new package. It can be difficult to decide whether to extend an existing package, or whether it may be worth starting a new one, some resources to help understand how to contribute to a new package: 
 
 -   A blog post by Jim Hester on contributing to the tidyverse: <https://www.tidyverse.org/blog/2017/08/contributing/> 
 
@@ -73,15 +73,15 @@ The [R validation hub](https://pharmar.org) is a pan-pharma organisation, that a
 
 Roche has also open sourced a github-action called [thevalidatoR, which is available on Github Marketplace](https://github.com/marketplace/actions/r-package-validation-report), which will generate a PDF with the unit testing results, as well as a traceability of matrix of documentation to tested functionality against a standard rocker R container.
 
-## Licenses: using a project 
+## Licences: using a project 
 
-The licence of projects you depend on, particularly if you incorporate the source code into your compiled/shared product, can have drastic effects on what you can do with your project. It is always important to seek in-house counsel advice on your companies position on different license types.  
+The licence of projects you depend on, particularly if you incorporate the source code into your compiled/shared product, can have drastic effects on what you can do with your project. It is always important to seek in-house counsel advice on your companies position on different licence types.  
 
 As a general guidance: 
 
--   There are permissive licenses that allow people to use a project in almost any way, through to copy-left licenses that prevent distributing and, in some cases, monetizing any project that incorporates the dependency into its codebase.  
+-   There are permissive licences that allow people to use a project in almost any way, through to copy-left licences that prevent distributing and, in some cases, monetizing any project that incorporates the dependency into its codebase.  
 
 ```{=html}
 <!-- -->
 ```
--   Two key resources to understand license types are <https://choosealicense.com/> and <https://opensource.org/licenses>.  
+-   Two key resources to understand licence types are <https://choosealicense.com/> and <https://opensource.org/licenses>.  
