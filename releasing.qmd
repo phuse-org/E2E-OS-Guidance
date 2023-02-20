@@ -18,13 +18,13 @@ Competitive IP
 
 Post-competitive IP
 
-:   A less common term we have defined to be where code collaboration improves the efficency of insights, rather than the creation of insights that would otherwise not be possible. In the context of PhUSE collaborators, this includes packages that take CDISC data and apply templated data steps and visualizations to prepare a CSR, like those seen in the [pharmaverse](https://pharmaverse.org/).
+:   A less common term we have defined to be where code collaboration improves the efficency of insights, rather than the creation of insights that would otherwise not be possible. In the context of PhUSE collaborators, this includes packages that take CDISC data and apply templated data steps and visualizations to prepare a CSR, like those seen in the [pharmaverse](https://pharmaverse.org/). 
 
 ## Preparing for release
 
 ### When is a good time to open source?
 
-As a general rule *arising IP* [@LawArising], that is IP generated as part of the project, is simpler to handle than *background IP* that already exists. There is often a benefit to define what you want to do, decide if it would be open sourced, and if so, then start it in an open-source setting. This also helps to encourage defining a clear scope from day one, and encourage others to engage early rather than initiate additional projects that later may not be compatible without significant re-factoring.
+As a general rule *arising IP* [@LawArising], that is IP generated as part of the project, is simpler to handle than *background IP* that already exists. There is often a benefit to define what you want to do, decide if it would be open sourced, and if so, start it in an open-source setting. This also helps to encourage defining a clear scope from day one, and encourage others to engage early rather than initiate additional projects that later may not be compatible without significant re-factoring.
 
 ### Does it matter where you put a package on github.com?
 
@@ -33,15 +33,15 @@ What are the differences between GitHub organizations that host packages like [p
 Ultimately, the licence chosen has an impact on how a package can be used, rather than the location the code is shared from. The location though can influence how a project is perceived. If it is hosted on a GitHub organisation with the name of a pharma company, relative to a pan-company organisation, it may imply that the project is '*Company A's*' project rather than something they wish to co-create. As a general rule, the recommendation would be to place it in a company's organisation if you wish to remain control of the roadmap, but look to pan-company organisations if you wish to co-create and co-own the packages trajectory. Some examples are;
 
 -   Personal Github orgs
-    -   diffdf ([gowerc/diffdf](https://github.com/gowerc/diffdf)) and survival ([therneau/survival](https://github.com/therneau/survival)) are examples of two repositories used in pharma hosted in Github orgs belonging to a specific individual
+    -   diffdf ([gowerc/diffdf](https://github.com/gowerc/diffdf)) and survival ([therneau/survival](https://github.com/therneau/survival)) are examples of two repositories used in pharma hosted in Github orgs belonging to a specific individual.
 -   Project/Initiative Github orgs
-    -   [openpharma](https://github.com/openpharma): While openpharma has a dashboard and metadata pipeline that is agnostic to where a package comes from, it also will house packages that do not want to be associated with a specific company or organisation
-    -   [pharmaverse](https://github.com/pharmaverse): A sub-set of the pharmaverse clinical reporting repositories are also hosted on the pharmaverse Github org
-    -   [pharmaR](pharmaR): Houses repositories from the R Validation Hub working group
+    -   [openpharma](https://github.com/openpharma): While openpharma has a dashboard and metadata pipeline that is agnostic to where a package comes from, it also will house packages that do not want to be associated with a specific company or organisation.
+    -   [pharmaverse](https://github.com/pharmaverse): A sub-set of the pharmaverse clinical reporting repositories are also hosted on the pharmaverse Github org.
+    -   [pharmaR](pharmaR): Houses repositories from the R Validation Hub working group.
 -   Company Github orgs
     -   Many companies maintain Github orgs either at the company or department in a company level, like [GSK-Biostatistics](https://github.com/GSK-Biostatistics), [Roche](https://github.com/Roche), [Genentech](https://github.com/Genentech), [Novartis](https://github.com/Novartis)
--   Organisation Github orgs
-    -   [phuse-org](https://github.com/phuse-org): PHUSE projects and working groups from PHUSE
+-   Organisation Github orgs.
+    -   [phuse-org](https://github.com/phuse-org): PHUSE projects and working groups from PHUSE.
     -   [ropensci](https://github.com/ropensci), [ropenscilabs](https://github.com/ropenscilabs), [ropensci-docs](https://github.com/ropensci-docs), etc: rOpenSci maintains several GitHub orgs, with rOpenSci housing mature R packages contributed by their staff, or peer-reviewed.
 
 ### What is important to look for when releasing a package that started life internally?
@@ -64,17 +64,17 @@ In this guidance it is suggested to open-source early, yet doing so could expose
 
 Ultimately, the licence used for a project would require in-house counsel guidance on what licence is preferred.
 
-All code open-sourced should have a licence. The licence has a standard location of being a text file called 'LICENSE' in the root of the project folder, or a markdown file called 'LICENSE.md'. Of particular note is that R packages often have the licence specified in the R specific location of the DESCRIPTION file, or may have it in both the standard and R specific locations (in rare cases these can also contradict so it is important to read both).
+All code open-sourced should have a licence. The licence has a standard location of being a text file called 'LICENSE' in the root of the project folder, a text file called 'LICENSE.txt', or a markdown file called 'LICENSE.md'. Of particular note is that R packages often have the licence specified in the R specific location of the DESCRIPTION file, or may have it in both the standard and R specific locations (in rare cases these can also contradict so it is important to read both).
 
 Generally, permissive licences are more common in clinical reporting, with the majority of pharmaverse R packages using an [MIT](https://choosealicense.com/licenses/mit/) or [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/) license. These licences allow distribution, commercial use and modification. One primary difference between MIT and Apache 2.0 is that the latter has patent protection language and rules around trademark usage, and may be preferred in larger projects due to its focus on more explicitly spelling out the terms.
 
 As a general guidance, if the purpose of the project is to let future contributors freely use the code, MIT license is a concise permissive license to adopt. In the pharmaceutical industry, however, the patent of the code is often of concern in a post-competitive environment across companies, and thus an Apache 2.0 license could be more suitable. On the other hand, the copyleft license (e.g. GPLv2, GPLv3) demands any downstream derivatives to follow the same copyleft license of the source project and generally should be avoided. Sometimes, a company's legal team might come up with their own license that is not listed as one of the approved open-source licenses. It is highly recommended to only use standard open-source licenses, as these are verified by the Open-Source Initiative, so others can easily understand the governance model of your project.
 
-It is highly recommended to select a suitable license from the project initiation, because a change in the license could impact many aspects of the project. With a permissive license, others have been granted permission to license modification from its inception. When under a permissive license, you could change to a license with more requirements, but this would not rescind the historical codebase that has a more permissive license.
+A licence is ideally one of the first commits made at project initiation, because a change in the license could impact many aspects of the project. With a permissive license, others have been granted permission to license modification from its inception. When under a permissive license, you could change to a license with more requirements, but this would not rescind the historical codebase that has a more permissive license.
 
 ## Collaboration and governance models
 
-Open-sourcing a project allows others to leverage the code, but the ultimate goal is often that the open-source community adopts and helps extend and evolve the project. How projects govern this shared development is diverse. A commonality across all projects is that the repository, and it's main/production branch, will have some form of write access control, meaning a level of governance is present even if it's not formalised.
+Open-sourcing a project allows others to leverage the code, but the ultimate goal is often that the open-source community adopts and helps extend and evolve the project. How projects govern this shared development is diverse. A commonality across all projects is that the repository, and it's `main`/production branch, will have some form of write access control, meaning a level of governance is present even if it's not formalised.
 
 ## What different governance models exist for open source?
 
@@ -86,7 +86,7 @@ Single Entity
 
 Steering Group
 
-:   This category refers to a project where the ultimate decision-making capacity is shared between more than one entity. The structure of the group and manner in which the group makes decisions can vary. The name used to refer to the group can also vary, examples include "governing board", "steering group", and "council". A famous example includes the relatively oligarchical Python Steering Council from 2018, however many projects prefer simple democracies, or merely that a sufficient number of approvals from among the contributing entities are sufficient to approve acceptance to the production branch. Within pharmaverse.org, admiral is an example of this governance model.
+:   This category refers to a project where the ultimate decision-making capacity is shared between more than one entity. The structure of the group and manner in which the group makes decisions can vary. The name used to refer to the group can also vary, examples include "governing board", "steering group", and "council". A famous example includes the relatively oligarchical Python Steering Council from 2018, however many projects prefer simple democracies, or merely that a specific number of approvals from among the contributing entities are required to approve acceptance to the production branch. Within pharmaverse.org, admiral is an example of this governance model.
 
 Do-ocracy
 

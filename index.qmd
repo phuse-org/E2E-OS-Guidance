@@ -1,6 +1,6 @@
 # Guidance scope and purpose {.unnumbered}
 
-The primary aim of this collaboration is to provide guidance and link out to more information. In this whitepaper, R packages are referenced as an example OSS project that is a focal point today in clinical reporting, but the principles extend to other libraries in python, Julia, javascript etc. The following topics are covered in this white paper: 
+The primary aim of this collaboration is to provide guidance within the context of how open source is relevant to PhUSE members, and link out to more information to avoid duplication on more generalisable topics. In this guidance, R packages are referenced as an example OSS project that is a focal point today in clinical reporting, but the principles extend to other libraries in python, Julia, javascript etc. The following topics are covered in this white paper: 
 
 **Using open source** 
 

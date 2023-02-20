@@ -30,8 +30,6 @@
     <a href="https://phuse-org.github.io/E2E-OS-Guidance/"><strong>Explore the guidance »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/phuse-org/E2E-OS-Guidance">View Demo</a>
-    ·
     <a href="https://github.com/phuse-org/E2E-OS-Guidance/issues">Report Bug or Mistake</a>
     ·
     <a href="https://github.com/phuse-org/E2E-OS-Guidance/issues">Suggest improvement</a>
