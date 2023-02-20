@@ -14,7 +14,10 @@ Some sites like openpharma.pharmaverse.org (specific to R and python packages in
 
 ## How active are the community behind a project? 
 
-Projects can go through lifecycles, so activity on a repo could have a variety of positive or negative implications. A project could have almost no active community in terms of recent contributions or response to issues, much like the R package survival (<https://github.com/therneau/survival>), yet be a stable and critical package in R installations. Alternatively, a lack of activity could indicate a package is abandoned or deprecated. CROSS LINK LUFECYCLES
+The activity on a project does not tell you the quality and extent of use of a project. Two examples are:
+
+- A project could have almost no active community in terms of recent contributions or response to issues, much like the R package survival (<https://github.com/therneau/survival>), yet be a stable and critical package in R installations. 
+- A project could also have no activity as it has been abondened after or before it reached v1.0.
 
 The community behind a project is also not limited to the people that contribute code. Users can also engage with a project via giving feedback via mechanisms like GitHub issues, emailing authors or engaging in discussions on GitHub issues. @fig-teal is an example of an issue page for the teal R package. The figure shows that teal has 24 open issues, and 266 closed issues. Small speech bubbles on the right of the figure show discussion have occurred on some issues. By looking through the issues, subjective impressions on community health can be made, for instance whether it's a few people giving feedback and one person developing, does it have stale issues no-one replies to, or does it have a lively community engaged in discussion and coordination.
 
