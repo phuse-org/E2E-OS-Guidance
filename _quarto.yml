@@ -23,6 +23,7 @@ book:
     - contributors.qmd
     - references.qmd
 
+csl: jama.csl
 bibliography: references.bib
 
 format:
