@@ -4,6 +4,8 @@
 
 The communities that maintain and build open-source packages are diverse, and there are no set conventions on how they are maintained, resourced, and governed. There are no universal magic metrics to summarise whether an OS project is _'healthy'_; for example if a project has had no activity for 12 months, is that because the product has been abandoned/superseded, or could it be it had a small well-defined scope and is now stable and feature complete? The following section is a non-exhaustive discussion of topics relevant when using open-source data science projects. 
 
+CDISC Open-source Alliance ([CDISC COSA](https://cosa.cdisc.org/)) is an initiative from CDISC, where they try to assist pharmaceutical companies navigating the difficulties outlined above by engaging with open-source projects that are funded by pharma companies and creating a curated list of projects that can be expected to have sufficient funding, as well as leverage domain knowledge from operating within the industry to solve common pain points.
+
 ## How can I see the activity of an open-source project? 
 
 Many, but not all, open-source projects are on [github.com](https://github.com) or [gitlab.com](https://gitlab.com). On github.com, every repo contains a tab called Insights, from where you can see information on the people who contributed lines of code to a project. Of a particular interest might be the Contributor tab within Insights, an example screenshot of the dplyr R package contributor page is in @fig-dplyr.  
@@ -77,15 +79,15 @@ Roche has also open sourced a github-action called [thevalidatoR, which is avail
 
 The [`oysteR`](https://github.com/sonatype-nexus-community/oysteR) R package can help scan R projects for known vulnerabilities via a REST API interface into the vendor tool _OSS Index_ from _sonatype_.
 
-## Licences: using a project 
+## Licenses: using a project 
 
-The licence of projects you depend on, particularly if you incorporate the source code into your compiled/shared product, can have drastic effects on what you can do with your project. It is always important to seek in-house counsel advice on your companies position on different licence types.  
+The license of projects you depend on, particularly if you incorporate the source code into your compiled/shared product, can have drastic effects on what you can do with your project. It is always important to seek in-house counsel advice on your companies position on different license types.  
 
 As a general guidance: 
 
--   There are permissive licences that allow people to use a project in almost any way, through to copy-left licences that prevent distributing and, in some cases, monetizing any project that incorporates the dependency into its codebase.  
+-   There are permissive licenses that allow people to use a project in almost any way, through to copy-left licenses that prevent distributing and, in some cases, monetizing any project that incorporates the dependency into its codebase.  
 
 ```{=html}
 <!-- -->
 ```
--   Two key resources to understand licence types are <https://choosealicense.com/> and <https://opensource.org/licenses>.  
+-   Two key resources to understand license types are <https://choosealicense.com/> and <https://opensource.org/licenses>.  
