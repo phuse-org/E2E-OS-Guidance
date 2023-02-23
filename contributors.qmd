@@ -18,3 +18,5 @@ Michael Stackhouse, Atorus Research (co-lead)
 Ross Farrugia, Roche
 
 Samir Parmar, Pfizer
+
+Tobias Krøgholt, Novo Nordisk
