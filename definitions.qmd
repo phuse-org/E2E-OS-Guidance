@@ -1,17 +1,12 @@
 # Definitions {.unnumbered}
 
-CLA: Contributor licence Agreement. Has a similar purpose to a DCO (Developer Certificate of Origin). 
-
-CSR: Clinical Study Report 
-
-eCRF: electronic Case Report Form 
-
-GPL: GNU General Public Licence 
-
-MIT: Common acronym for a licence released by the Massachusetts Institute of Technology  
-
-OS: Open-Source 
-
-OSS: Open-Source Software 
-
-IP: Intellectual Property 
+| **Abbreviation** | **Description** |
+| ---------------- | ----------------|
+| CLA  | Contributor licence Agreement. Has a similar purpose to a DCO (Developer Certificate of Origin). |
+| CSR  | Clinical Study Report |
+| eCRF | electronic Case Report Form |
+| GPL  | GNU General Public Licence |
+| MIT  | Common acronym for a licence released by the Massachusetts Institute of Technology |
+| OS   | Open-Source |
+| OSS  | Open-Source Software |
+| IP   | Intellectual Property |
