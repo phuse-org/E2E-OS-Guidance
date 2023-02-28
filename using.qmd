@@ -40,7 +40,7 @@ Numerous methods exist to find projects. Specific to R projects, the following s
  - [pharmaverse.org](http://pharmaverse.org): opinionated/curated effort to provide end-to-end tools for  clinical reporting.
  - [openpharma.pharmaverse.org](http://openpharma.pharmaverse.org): un-opinionated tracker of packages built by pharma for pharma use  cases. It also and indexes and provides package metadata in a dashboard, and provides metadata to  pharmaverse.org.
 
- - The [R universe](https://r-universe.dev/search/) hosts ecosystems of packages in CRAN-like repositories.  As an example, the Pharmaverse has the 'bleeding edge' of the main branches of all included R package  available as a [CRAN-like repository](https://pharmaverse.r-universe.dev/builds).
+ - The [R universe](https://r-universe.dev/search/) hosts ecosystems of packages in CRAN-like repositories.  As an example, the pharmaverse has the 'bleeding edge' of the main branches of all included R package  available as a [CRAN-like repository](https://pharmaverse.r-universe.dev/builds).
  - [rseek.org](http://rseek.org): Google filter for R relevant content.
  - [rinpharma.com/publication](http://rinpharma.com/publication): the proceedings of the R/Pharma conference contain many relevant projects.
 

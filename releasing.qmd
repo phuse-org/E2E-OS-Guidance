@@ -94,7 +94,7 @@ Do-ocracy
 
 Foundation governed
 
-:   A legal body (e.g., non-profit) assumes control - an example organisation is the Linux Foundation which governs many projects, while in Pharma there are parallels to efforts like Transcelerate and OHDSI. There are no examples of this model within pharmaverse.org, but R/Pharma repositories do follow this model, where the registered non-profit Open Source in Pharma governs the github organisation.
+:   A legal body (e.g., non-profit) assumes control - an example organisation is the Linux Foundation which governs many projects, while in pharma there are parallels to efforts like Transcelerate and OHDSI. There are no examples of this model within pharmaverse.org, but R/Pharma repositories do follow this model, where the registered non-profit Open Source in pharma governs the github organisation.
 
 If two or more companies want to formally collaborate on an open-source project, what is the role of legal contracts between the companies when the code is open-source?
 
@@ -110,7 +110,7 @@ dplyr
 
 gt
 
-:   There is a large spread of table generation packages in Pharma, but several Pharma companies (Roche and GSK---add links to their issues before pub) have publicly been exploring extensions that would allow the use of gt in TLG generation for CSRs. No legal agreement exists beyond the permissive licencing on the project.
+:   There is a large spread of table generation packages in pharma, but several pharma companies (Roche and GSK---add links to their issues before pub) have publicly been exploring extensions that would allow the use of gt in TLG generation for CSRs. No legal agreement exists beyond the permissive licencing on the project.
 
 pkglite
 
@@ -118,9 +118,9 @@ pkglite
 
 admiral
 
-:   admiral is an R package for creating ADaM datasets. The copyright is held between Roche and GSK, and it is permissively licensed. A contract exists between Roche and GSK on their collaboration model. Other Pharma's have contributed and offered to extend admiral without legal contracts in place on the original codebase.
+:   admiral is an R package for creating ADaM datasets. The copyright is held between Roche and GSK, and it is permissively licensed. A contract exists between Roche and GSK on their collaboration model. Other pharmaceutical companies have contributed and offered to extend admiral without legal contracts in place on the original codebase.
 
-The examples above were intended to highlight that the majority of R packages used by Pharma companies are done so without legal contracts in place, beyond the license of the project, even when some collaboration takes place.
+The examples above were intended to highlight that the majority of R packages used by pharma companies are done so without legal contracts in place, beyond the license of the project, even when some collaboration takes place.
 
 It remains a discussion point though whether licenses are required, and the decision to create a license may become relevant if companies want to formally pool resources. It's important to note that with permissively license projects, it is possible that if two entities want to take a package in different directions, they are able to by forking the project. So, contributions to another entities package are not lost to the contributing company.
 
