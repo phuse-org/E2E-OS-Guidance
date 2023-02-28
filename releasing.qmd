@@ -2,9 +2,9 @@
 
 Without open-source, many of the R packages we use today would never have developed or would be kept behind company firewalls. Open-source provides a mechanism for code sharing and collaboration, which in turn means talent can flow from company to company across our industry, we prevent duplication of the same post-competitive tools, and we move closer to decrease the burden on reviewers by bringing consistency in both our code and outputs in a submission.
 
-## Intellectual Property (IP)
+## Intellectual Property
 
-IP is often bucketed into pre-competitive and competitive IP [@Cont2016], with post-competitive being a less established term we will define in this guidance. In clinical reporting, we place significant resources into the collection and presentation of information that was collected on our competitive IP in confirmatory clinical trials. In order to help separate this simpler case from pre-competitive -- here we define as post-competitive a unique scenario of code that takes data generated as part of confirmatory studies (e.g. a Phase III trial) and creates an output. Post-competitive IP is where the benefits of open sourcing and encouraging between company collaboration can be more clearly differentiated from potential competitive advantage in developing new medicines.
+Intellectual Property (IP) is often bucketed into pre-competitive and competitive IP [@Cont2016], with post-competitive being a less established term we will define in this guidance. In clinical reporting, we place significant resources into the collection and presentation of information that was collected on our competitive IP in confirmatory clinical trials. In order to help separate this simpler case from pre-competitive---here we define as post-competitive a unique scenario of code that takes data generated as part of confirmatory studies (e.g. a Phase III trial) and creates an output. Post-competitive IP is where the benefits of open sourcing and encouraging between company collaboration can be more clearly differentiated from potential competitive advantage in developing new medicines.
 
 The following summarizes the three types of IP:
 
@@ -110,7 +110,7 @@ dplyr
 
 gt
 
-:   There is a large spread of table generation packages in Pharma, but several Pharma companies (Roche and GSK -- add links to their issues before pub) have publicly been exploring extensions that would allow the use of gt in TLG generation for CSRs. No legal agreement exists beyond the permissive licencing on the project.
+:   There is a large spread of table generation packages in Pharma, but several Pharma companies (Roche and GSK---add links to their issues before pub) have publicly been exploring extensions that would allow the use of gt in TLG generation for CSRs. No legal agreement exists beyond the permissive licencing on the project.
 
 pkglite
 

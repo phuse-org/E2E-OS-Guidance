@@ -28,7 +28,7 @@ Packages can also be open sourced without having the place they develop the code
 Some things to consider when trying to establish the activity of a community are:
 
  - How many individuals contributed to the project?
- - What is the spread in contributions? What is the size of the 'core' group that contribute the majority of the code? What is the spread of commits -- is it highly skewed to 1 or 2 people contributing?
+ - What is the spread in contributions? What is the size of the 'core' group that contribute the majority of the code? What is the spread of commits---is it highly skewed to 1 or 2 people contributing?
  - What is the recent and trends in commit activity? Is it currently active, formerly or is yet to become active?
  - How many open and closed issues are there? If it's a low number, is that in line with the age and expected use of the project?
  - Are there 'stale' open issues, where issues remain open for months or years? Are many of these stale issues with comments, suggesting some discussion, or absent of comments suggesting there is no feedback loop present between issues and the codebase? A thing to also look for is whether closed issues are resolved, as some projects use bots to automatically close stale issues.
