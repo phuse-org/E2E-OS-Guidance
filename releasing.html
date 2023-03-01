@@ -230,9 +230,10 @@ div.csl-indent {
 </header>
 
 <p>Without open-source, many of the R packages we use today would never have developed or would be kept behind company firewalls. Open-source provides a mechanism for code sharing and collaboration, which in turn means talent can flow from company to company across our industry, we prevent duplication of the same post-competitive tools, and we move closer to decrease the burden on reviewers by bringing consistency in both our code and outputs in a submission.</p>
+<p>Within the context of clinical reporting, we are often focussed on the benefit of inter-company collaboration on packages in the clinical domain. It is important to note though that there is already a strong track record of open source tools supported by Pharma having an impact across data science, examples include Pfizer and <code>caret</code><span class="citation" data-cites="caret">(<a href="references.html#ref-caret" role="doc-biblioref">Max Kuhn 2010</a>)</span>, Eli Lilly and <code>targets</code><span class="citation" data-cites="Targets">(<a href="references.html#ref-Targets" role="doc-biblioref">Will Landau 2022</a>)</span> and Genentech/Roche and the R language <span class="citation" data-cites="NYT Lawrence">(<a href="references.html#ref-NYT" role="doc-biblioref">Ashlee Vance 2009</a>; <a href="references.html#ref-Lawrence" role="doc-biblioref">Michael Lawrence 2018</a>)</span>.</p>
 <section id="intellectual-property-ip" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="intellectual-property-ip"><span class="header-section-number">3.1</span> Intellectual Property (IP)</h2>
-<p>IP is often bucketed into pre-competitive and competitive IP<span class="citation" data-cites="Cont2016"><sup><a href="references.html#ref-Cont2016" role="doc-biblioref">1</a></sup></span>, with post-competitive being a less established term we will define in this guidance. In clinical reporting, we place significant resources into the collection and presentation of information that was collected on our competitive IP in confirmatory clinical trials. In order to help separate this simpler case from pre-competitive – here we define as post-competitive a unique scenario of code that takes data generated as part of confirmatory studies (e.g.&nbsp;a Phase III trial) and creates an output. Post-competitive IP is where the benefits of open sourcing and encouraging between company collaboration can be more clearly differentiated from potential competitive advantage in developing new medicines.</p>
+<p>IP is often bucketed into pre-competitive and competitive IP <span class="citation" data-cites="Cont2016">(<a href="references.html#ref-Cont2016" role="doc-biblioref">Contreras 2016</a>)</span>, with post-competitive being a less established term we will define in this guidance. In clinical reporting, we place significant resources into the collection and presentation of information that was collected on our competitive IP in confirmatory clinical trials. In order to help separate this simpler case from pre-competitive – here we define as post-competitive a unique scenario of code that takes data generated as part of confirmatory studies (e.g.&nbsp;a Phase III trial) and creates an output. Post-competitive IP is where the benefits of open sourcing and encouraging between company collaboration can be more clearly differentiated from potential competitive advantage in developing new medicines.</p>
 <p>The following summarizes the three types of IP:</p>
 <dl>
 <dt>Pre-competitive</dt>
@@ -253,7 +254,7 @@ div.csl-indent {
 <h2 data-number="3.2" class="anchored" data-anchor-id="preparing-for-release"><span class="header-section-number">3.2</span> Preparing for release</h2>
 <section id="when-is-a-good-time-to-open-source" class="level3" data-number="3.2.1">
 <h3 data-number="3.2.1" class="anchored" data-anchor-id="when-is-a-good-time-to-open-source"><span class="header-section-number">3.2.1</span> When is a good time to open source?</h3>
-<p>As a general rule <em>arising IP</em><span class="citation" data-cites="LawArising"><sup><a href="references.html#ref-LawArising" role="doc-biblioref">2</a></sup></span>, that is IP generated as part of the project, is simpler to handle than <em>background IP</em> that already exists. There is often a benefit to define what you want to do, decide if it would be open sourced, and if so, start it in an open-source setting. This also helps to encourage defining a clear scope from day one, and encourage others to engage early rather than initiate additional projects that later may not be compatible without significant re-factoring.</p>
+<p>As a general rule <em>arising IP</em> <span class="citation" data-cites="LawArising">(<a href="references.html#ref-LawArising" role="doc-biblioref">Law Insider 2022</a>)</span>, that is IP generated as part of the project, is simpler to handle than <em>background IP</em> that already exists. There is often a benefit to define what you want to do, decide if it would be open sourced, and if so, start it in an open-source setting. This also helps to encourage defining a clear scope from day one, and encourage others to engage early rather than initiate additional projects that later may not be compatible without significant re-factoring.</p>
 </section>
 <section id="does-it-matter-where-you-put-a-package-on-github.com" class="level3" data-number="3.2.2">
 <h3 data-number="3.2.2" class="anchored" data-anchor-id="does-it-matter-where-you-put-a-package-on-github.com"><span class="header-section-number">3.2.2</span> Does it matter where you put a package on github.com?</h3>
@@ -274,7 +275,7 @@ div.csl-indent {
 <ul>
 <li>Many companies maintain Github orgs either at the company or department in a company level, like <a href="https://github.com/GSK-Biostatistics">GSK-Biostatistics</a>, <a href="https://github.com/Roche">Roche</a>, <a href="https://github.com/Genentech">Genentech</a>, <a href="https://github.com/Novartis">Novartis</a></li>
 </ul></li>
-<li>Organisation Github orgs.
+<li>Organisation Github orgs, <a href="https://github.com/Merck">Merck</a>
 <ul>
 <li><a href="https://github.com/phuse-org">phuse-org</a>: PHUSE projects and working groups from PHUSE.</li>
 <li><a href="https://github.com/ropensci">ropensci</a>, <a href="https://github.com/ropenscilabs">ropenscilabs</a>, <a href="https://github.com/ropensci-docs">ropensci-docs</a>, etc: rOpenSci maintains several GitHub orgs, with rOpenSci housing mature R packages contributed by their staff, or peer-reviewed.</li>
@@ -295,6 +296,7 @@ div.csl-indent {
 <h2 data-number="3.4" class="anchored" data-anchor-id="reputational-risks-and-supporting-others"><span class="header-section-number">3.4</span> Reputational risks and supporting others</h2>
 <p>What are the expectations when I release a package? Are there risks to my company’s brand having abandoned non-maintained packages?</p>
 <p>In this guidance it is suggested to open-source early, yet doing so could expose projects that are not ready for use, might be cancelled before reaching v1.0 or are never successfully adopted. The ratio of failed to successful projects is an important consideration, but a skew in that ratio being a negative indicator can be mitigated if repositories are clear on what stage of the product <a href="https://lifecycle.r-lib.org/">life cycle they are at</a> and make use of <a href="https://docs.github.com/en/repositories/archiving-a-github-repository/archiving-repositories">tools to inform users if a project has been deprecated</a>, or are looking for new maintainers to take over the project.</p>
+<p>While transperancy on lifecycles can help to ensure no negative reactions come from early software, robust software can have a positive effect on how others view your project. <a href="https://stats-devguide.ropensci.org/">ROpenSci’s statistical software review guide</a> includes many recomendations for reviewers that you can also take and apply to your software as you prepare for a version 1.0 release. The <a href="https://r-pkgs.org/">r-pks.org</a> guide by Hadley Wickham also contains many of the best practices users may expect in a modern R package.</p>
 </section>
 <section id="licences-releasing-a-project" class="level2" data-number="3.5">
 <h2 data-number="3.5" class="anchored" data-anchor-id="licences-releasing-a-project"><span class="header-section-number">3.5</span> Licences: releasing a project</h2>
@@ -364,12 +366,24 @@ div.csl-indent {
 </blockquote>
 
 
-<div id="refs" class="references csl-bib-body" role="doc-bibliography" style="display: none">
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-NYT" class="csl-entry" role="doc-biblioentry">
+Ashlee Vance. 2009. <span>“Data Analysts Captivated by r’s Power.”</span> <em>New York Times</em>.
+</div>
 <div id="ref-Cont2016" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline">Contreras J. Pre-competition. <em>North Corolina Law Review</em>. 2016;95(1):Article 3.</div>
+Contreras, Jorge. 2016. <span>“Pre-Competition.”</span> <em>North Corolina Law Review</em> 95 (1): Article 3.
 </div>
 <div id="ref-LawArising" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">2. </div><div class="csl-right-inline">Law Insider. Arising intellectual property definition. Published online 2022. Accessed February 2, 2023. <a href="https://www.lawinsider.com/dictionary/arising-intellectual-property/">https://www.lawinsider.com/dictionary/arising-intellectual-property/</a></div>
+Law Insider. 2022. <span>“Arising Intellectual Property Definition.”</span> <a href="https://www.lawinsider.com/dictionary/arising-intellectual-property/">https://www.lawinsider.com/dictionary/arising-intellectual-property/</a>.
+</div>
+<div id="ref-caret" class="csl-entry" role="doc-biblioentry">
+Max Kuhn. 2010. <span>“The Caret Package: A Unified Interface for Predictive Models.”</span>
+</div>
+<div id="ref-Lawrence" class="csl-entry" role="doc-biblioentry">
+Michael Lawrence. 2018. <span>“Michael Lawrence - r-Core/Bioconductor Core Role at Genentech.”</span> <a href="https://www.linkedin.com/in/michael-lawrence-74a9b482/">https://www.linkedin.com/in/michael-lawrence-74a9b482/</a>.
+</div>
+<div id="ref-Targets" class="csl-entry" role="doc-biblioentry">
+Will Landau. 2022. <span>“The <span class="nocase">targets</span> r Package User Manual.”</span> <a href="https://books.ropensci.org/targets/">https://books.ropensci.org/targets/</a>.
 </div>
 </div>
 </section>
