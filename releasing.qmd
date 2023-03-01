@@ -4,9 +4,9 @@ Without open-source, many of the R packages we use today would never have develo
 
 Within the context of clinical reporting, we are often focussed on the benefit of inter-company collaboration on packages in the clinical domain. It is important to note though that there is already a strong track record of open source tools supported by Pharma having an impact across data science, examples include Pfizer and `caret`[@caret], Eli Lilly and `targets`[@Targets] and Genentech/Roche and the R language [@NYT; @Lawrence]. 
 
-## Intellectual Property (IP)
+## Intellectual Property 
 
-IP is often bucketed into pre-competitive and competitive IP [@Cont2016], with post-competitive being a less established term we will define in this guidance. In clinical reporting, we place significant resources into the collection and presentation of information that was collected on our competitive IP in confirmatory clinical trials. In order to help separate this simpler case from pre-competitive -- here we define as post-competitive a unique scenario of code that takes data generated as part of confirmatory studies (e.g. a Phase III trial) and creates an output. Post-competitive IP is where the benefits of open sourcing and encouraging between company collaboration can be more clearly differentiated from potential competitive advantage in developing new medicines.
+Intellectual Property (IP) is often bucketed into pre-competitive and competitive IP [@Cont2016], with post-competitive being a less established term we will define in this guidance. In clinical reporting, we place significant resources into the collection and presentation of information that was collected on our competitive IP in confirmatory clinical trials. In order to help separate this simpler case from pre-competitive---here we define as post-competitive a unique scenario of code that takes data generated as part of confirmatory studies (e.g. a Phase III trial) and creates an output. Post-competitive IP is where the benefits of open sourcing and encouraging between company collaboration can be more clearly differentiated from potential competitive advantage in developing new medicines.
 
 The following summarizes the three types of IP:
 
@@ -16,7 +16,7 @@ Pre-competitive
 
 Competitive IP
 
-:   Clinical reporting relevant examples would be information on a new target, molecule or algorithm that provides an advantage in the creation of new medicines, or as a standalone data product that can be monetized.
+:   Relevant examples in clinical reporting would be information on a new target, molecule or algorithm that provides an advantage in the creation of new medicines, or as a standalone data product that can be monetized.
 
 Post-competitive IP
 
@@ -35,16 +35,16 @@ What are the differences between GitHub organizations that host packages like [p
 Ultimately, the licence chosen has an impact on how a package can be used, rather than the location the code is shared from. The location though can influence how a project is perceived. If it is hosted on a GitHub organisation with the name of a pharma company, relative to a pan-company organisation, it may imply that the project is '*Company A's*' project rather than something they wish to co-create. As a general rule, the recommendation would be to place it in a company's organisation if you wish to remain control of the roadmap, but look to pan-company organisations if you wish to co-create and co-own the packages trajectory. Some examples are;
 
 -   Personal Github orgs
-    -   diffdf ([gowerc/diffdf](https://github.com/gowerc/diffdf)) and survival ([therneau/survival](https://github.com/therneau/survival)) are examples of two repositories used in pharma hosted in Github orgs belonging to a specific individual.
+    *   diffdf ([gowerc/diffdf](https://github.com/gowerc/diffdf)) and survival ([therneau/survival](https://github.com/therneau/survival)) are examples of two repositories used in pharma hosted in Github orgs belonging to a specific individual.
 -   Project/Initiative Github orgs
-    -   [openpharma](https://github.com/openpharma): While openpharma has a dashboard and metadata pipeline that is agnostic to where a package comes from, it also will house packages that do not want to be associated with a specific company or organisation.
-    -   [pharmaverse](https://github.com/pharmaverse): A sub-set of the pharmaverse clinical reporting repositories are also hosted on the pharmaverse Github org.
-    -   [pharmaR](pharmaR): Houses repositories from the R Validation Hub working group.
+    *   [openpharma](https://github.com/openpharma): While openpharma has a dashboard and metadata pipeline that is agnostic to where a package comes from, it also will house packages that do not want to be associated with a specific company or organisation.
+    *   [pharmaverse](https://github.com/pharmaverse): A sub-set of the pharmaverse clinical reporting repositories are also hosted on the pharmaverse Github org.
+    *   [pharmaR](pharmaR): Houses repositories from the R Validation Hub working group.
 -   Company Github orgs
-    -   Many companies maintain Github orgs either at the company or department in a company level, like [GSK-Biostatistics](https://github.com/GSK-Biostatistics), [Roche](https://github.com/Roche), [Genentech](https://github.com/Genentech), [Novartis](https://github.com/Novartis)
+    *   Many companies maintain Github orgs either at the company or department in a company level, like [GSK-Biostatistics](https://github.com/GSK-Biostatistics), [Roche](https://github.com/Roche), [Genentech](https://github.com/Genentech), [Novartis](https://github.com/Novartis)
 -   Organisation Github orgs, [Merck](https://github.com/Merck)
-    -   [phuse-org](https://github.com/phuse-org): PHUSE projects and working groups from PHUSE.
-    -   [ropensci](https://github.com/ropensci), [ropenscilabs](https://github.com/ropenscilabs), [ropensci-docs](https://github.com/ropensci-docs), etc: rOpenSci maintains several GitHub orgs, with rOpenSci housing mature R packages contributed by their staff, or peer-reviewed.
+    *   [phuse-org](https://github.com/phuse-org): PHUSE projects and working groups from PHUSE.
+    *   [ropensci](https://github.com/ropensci), [ropenscilabs](https://github.com/ropenscilabs), [ropensci-docs](https://github.com/ropensci-docs), etc: rOpenSci maintains several GitHub orgs, with rOpenSci housing mature R packages contributed by their staff, or peer-reviewed.
 
 ### What is important to look for when releasing a package that started life internally?
 
@@ -99,7 +99,7 @@ Do-ocracy
 
 Foundation governed
 
-:   A legal body (e.g., non-profit) assumes control - an example organisation is the Linux Foundation which governs many projects, while in Pharma there are parallels to efforts like Transcelerate and OHDSI. There are no examples of this model within pharmaverse.org, but R/Pharma repositories do follow this model, where the registered non-profit Open Source in Pharma governs the github organisation.
+:   A legal body (e.g., non-profit) assumes control - an example organisation is the Linux Foundation which governs many projects, while in pharma there are parallels to efforts like Transcelerate and OHDSI. There are no examples of this model within pharmaverse.org, but R/Pharma repositories do follow this model, where the registered non-profit _Open Source in Pharma_ governs the github organisation.
 
 If two or more companies want to formally collaborate on an open-source project, what is the role of legal contracts between the companies when the code is open-source?
 
@@ -111,11 +111,11 @@ When initiating a project like an R package, or when another company is consider
 
 dplyr
 
-:   The dplyr project is a ubiquitous in pharma, but is a generic data science package for data munging. The code owners are listed as an individual from a vendor, academia and a consultancy and it's released under a permissive license. This package is extensively consumed, and a core dependency in data related packages like admiral. This package is heavily depended on Pharma, but no legal agreement exists beyond the permissive licencing on the project.
+:   The dplyr package is a ubiquitous in pharma, but is a generic data science package for data munging. The code owners are listed as individuals from a vendor, academia and a consultancy and it's released under a permissive license. This package is extensively consumed, and a core dependency in data related packages like admiral. This package is heavily depended on pharma, but no legal agreement exists beyond the permissive licencing on the project.
 
 gt
 
-:   There is a large spread of table generation packages in Pharma, but several Pharma companies (Roche and GSK -- add links to their issues before pub) have publicly been exploring extensions that would allow the use of gt in TLG generation for CSRs. No legal agreement exists beyond the permissive licencing on the project.
+:   There is a large spread of table generation packages in pharma, but several pharma companies, including [Roche](https://github.com/rstudio/gt/issues/857) and [GSK](https://github.com/rstudio/gt/issues/1212), have publicly been exploring extensions that would allow the use of gt in TLG generation for CSRs. No legal agreement exists beyond the permissive licencing on the project.
 
 pkglite
 
@@ -123,9 +123,9 @@ pkglite
 
 admiral
 
-:   admiral is an R package for creating ADaM datasets. The copyright is held between Roche and GSK, and it is permissively licensed. A contract exists between Roche and GSK on their collaboration model. Other Pharma's have contributed and offered to extend admiral without legal contracts in place on the original codebase.
+:   admiral is an R package for creating ADaM datasets. The copyright is held between Roche and GSK, and it is permissively licensed. A contract exists between Roche and GSK on their collaboration model. Other companies have contributed and offered to extend admiral without legal contracts in place on the original codebase.
 
-The examples above were intended to highlight that the majority of R packages used by Pharma companies are done so without legal contracts in place, beyond the license of the project, even when some collaboration takes place.
+The examples above were intended to highlight that the majority of R packages used by pharma companies are done so without legal contracts in place, beyond the license of the project, even when some collaboration takes place.
 
 It remains a discussion point though whether licenses are required, and the decision to create a license may become relevant if companies want to formally pool resources. It's important to note that with permissively license projects, it is possible that if two entities want to take a package in different directions, they are able to by forking the project. So, contributions to another entities package are not lost to the contributing company.
 
