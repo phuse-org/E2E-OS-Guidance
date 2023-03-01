@@ -15,6 +15,8 @@ Keaven Anderson, Merck
 
 Michael Stackhouse, Atorus Research (co-lead) 
 
+Phil Bowsher, Posit
+
 Ross Farrugia, Roche
 
 Samir Parmar, Pfizer

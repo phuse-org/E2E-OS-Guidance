@@ -51,9 +51,11 @@ Numerous methods exist to find projects. Specific to R projects, the following s
 
 -   [rinpharma.com/publication](http://rinpharma.com/publication): the proceedings of the R/Pharma conference contain many relevant projects. 
 
+-   [ROpenSci](https://ropensci.org/packages/all/): maintains a list of packages they have vetted through their software review process, and they also [categorise the packages by domain](https://ropensci.org/packages/).
+
 ## What do I do if I see a project I could use, but it needs modification for my use case? 
 
-Using R packages as an example, if your analysis plan requires creating a Kaplan Meier plot, you could implement this using open code you program using R base plotting functions. Alternatively, you could introduce a dependency on a package that provides that functionality as a parameterised function, like [survminer](https://github.com/kassambara/survminer/), [visR](https://github.com/openpharma/visR/) or [tern](https://github.com/insightsengineering/tern/). Occasionally an existing package may be missing a feature you want, as can be derived from the presence of at least 3 R packages with a Kaplan Meier plotting function. In such cases, you may need to extend, or start a new package.   
+Using R packages as an example, if your analysis plan requires creating a Kaplan Meier plot, you could implement this using open code you program using R base plotting functions. Alternatively, you could introduce a dependency on a package that provides that functionality as a parameterised function, like [survminer](https://github.com/kassambara/survminer/), [visR](https://github.com/openpharma/visR/) or [tern](https://github.com/insightsengineering/tern/). Occasionally an existing package may be missing a feature you want, as can be derived from the presence of at least 3 R packages with a Kaplan Meier plotting function. In such cases, you may need to extend (i.e. fork and later make a pull request), or start a new package.   
 
 When an existing tool is not a perfect fit, it can be difficult to decide whether to extend an existing package, or whether it may be worth starting a new one. Some resources to help understand how to contribute to a new package are: 
 
@@ -76,6 +78,12 @@ The [R validation hub](https://pharmar.org) is a pan-pharma organisation, that a
 Roche has also open sourced a github-action called [thevalidatoR, which is available on Github Marketplace](https://github.com/marketplace/actions/r-package-validation-report), which will generate a PDF with the unit testing results, as well as a traceability matrix of documentation against tested functionality in a specified container.
 
 The [`oysteR`](https://github.com/sonatype-nexus-community/oysteR) R package can help scan R projects for known vulnerabilities via a REST API interface into the vendor tool _OSS Index_ from _sonatype_.
+
+Additional resources include:
+
+* the PhUSE Connect Paper [_How do I select an R package for my clinical workflow?_](https://www.lexjansen.com/phuse-us/2019/tt/TT11.pdf) provides additional details 
+of what two authors consider relevant when using an R package for clinical reporting. 
+* The [R Validation Hub's white paper](https://www.pharmar.org/white-paper/) extends the concepts discussed here by proposing a validation/risk assessment framework, which as of Q4 2023 is now being translated into an [opensource collaborative approach to validate R package across Pharma](https://github.com/pharmaR/regulatory-r-repo-wg).
 
 ## Licences: using a project 
 
