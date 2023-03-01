@@ -12,7 +12,9 @@ The primary aim of this collaboration is to provide guidance within the context 
 
 **Releasing open-source** 
 
--   A summary and recommendation of licence types, with particular focus on permissive vs copyleft licences and the ramifications on code built on top of your project Relevance of licences present in dependencies, direct vs transitive dependencies, and the issues around compiling with dependencies that could occur in something like a public shiny app 
+-   A summary and recommendation of licence types, with particular focus on permissive vs copyleft licences and the ramifications on code built on top of your project
+ 
+-   Relevance of licences present in dependencies, direct vs transitive dependencies, and the issues around compiling with dependencies that could occur in something like a public shiny app 
 
 -   Landscape of places to place open-source projects and build collaborative communities 
 
