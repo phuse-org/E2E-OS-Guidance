@@ -12,7 +12,7 @@ Some sites like openpharma.pharmaverse.org (specific to R and python packages in
 
 ![Screenshot from Insight tab for the dplyr R package](assets/ghdplyr.png){#fig-dplyr}
 
-### How active are the community behind a project? 
+### How active is the community behind a project? 
 
 The activity on a project does not tell you the quality and extent of use of a project. Two examples are:
 
@@ -25,13 +25,13 @@ The community behind a project is also not limited to the people that contribute
 
 Packages can also be open sourced without having the place they develop the code exposed to the general public. An example is the randomForest package ([stat.berkeley.edu/\~breiman/RandomForests](https://www.stat.berkeley.edu/~breiman/RandomForests/)), which is an open sourced (GPL-2/3) R package where the source code of the releases is open sourced for use, but the package authors do not give users access to view the place where they develop code. This does not mean the quality of the code is inferior, but does indicate there is an additional barrier to engaging with the package development as the first step would be to contact the authors.  
 
-Some things to consider when trying to establish the activity of a community are: 
+Some things to consider when trying to establish the community activity for a given package/project: 
 
 -   How many individuals contributed to the project? 
 
 -   What is the spread in contributions? What is the size of the 'core' group that contribute the majority of the code? What is the spread of commits -- is it highly skewed to 1 or 2 people contributing? 
 
--   What is the recent and trends in commit activity? Is it currently active, formerly or is yet to become active? 
+-   What are the most recent commits and are there any trends in commit activity? Is it currently active, formerly or is yet to become active? 
 
 -   How many open and closed issues are there? If it's a low number, is that in line with the age and expected use of the project? 
 
@@ -43,7 +43,7 @@ Numerous methods exist to find projects. Specific to R projects, the following s
 
 -   [pharmaverse.org](http://pharmaverse.org): opinionated/curated effort to provide end-to-end tools for clinical reporting. 
 
--   <http://openpharma.pharmaverse.org>: un-opinionated tracker of packages built by pharma for pharma use cases. It also and indexes and provides package metadata in a dashboard, and provides metadata to pharmaverse.org. 
+-   <http://openpharma.pharmaverse.org>: un-opinionated tracker of packages built by pharma for pharma use cases. It also indexes and provides package metadata in a dashboard, and provides metadata to pharmaverse.org. 
 
 - The [R universe](https://r-universe.dev/search/) hosts ecosystems of packages in CRAN-like repositories. As an example, the Pharmaverse has the 'bleeding edge' of the main branches of all included R package available as a [CRAN-like repository](https://pharmaverse.r-universe.dev/builds).
 

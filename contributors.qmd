@@ -19,4 +19,6 @@ Phil Bowsher, Posit
 
 Ross Farrugia, Roche
 
+Ryan Johnson, Posit
+
 Samir Parmar, Pfizer

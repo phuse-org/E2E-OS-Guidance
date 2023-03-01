@@ -63,7 +63,7 @@ What are the expectations when I release a package? Are there risks to my compan
 In this guidance it is suggested to open-source early, yet doing so could expose projects that are not ready for use, might be cancelled before reaching v1.0 or are never successfully adopted. The ratio of failed to successful projects is an important consideration, but a skew in that ratio being a negative indicator can be mitigated if repositories are clear on what stage of the product [life cycle they are at](https://lifecycle.r-lib.org/) and make use of [tools to inform users if a project has been deprecated](https://docs.github.com/en/repositories/archiving-a-github-repository/archiving-repositories), or are looking for new maintainers to take over the project.
 
 While transperancy on lifecycles can help to ensure no negative reactions come from early software, robust software can have a positive effect on how others view your project. [ROpenSci's statistical software review guide](https://stats-devguide.ropensci.org/) includes many recomendations for reviewers 
-that you can also take and apply to your software as you prepare for a version 1.0 release.
+that you can also take and apply to your software as you prepare for a version 1.0 release. The [r-pks.org](https://r-pkgs.org/) guide by Hadley Wickham also contains many of the best practices users may expect in a modern R package.
 
 ## Licences: releasing a project
 
