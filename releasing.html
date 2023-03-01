@@ -192,7 +192,7 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#intellectual-property-ip" id="toc-intellectual-property-ip" class="nav-link active" data-scroll-target="#intellectual-property-ip"><span class="toc-section-number">3.1</span>  Intellectual Property (IP)</a></li>
+  <li><a href="#intellectual-property" id="toc-intellectual-property" class="nav-link active" data-scroll-target="#intellectual-property"><span class="toc-section-number">3.1</span>  Intellectual Property</a></li>
   <li><a href="#preparing-for-release" id="toc-preparing-for-release" class="nav-link" data-scroll-target="#preparing-for-release"><span class="toc-section-number">3.2</span>  Preparing for release</a>
   <ul class="collapse">
   <li><a href="#when-is-a-good-time-to-open-source" id="toc-when-is-a-good-time-to-open-source" class="nav-link" data-scroll-target="#when-is-a-good-time-to-open-source"><span class="toc-section-number">3.2.1</span>  When is a good time to open source?</a></li>
@@ -231,9 +231,9 @@ div.csl-indent {
 
 <p>Without open-source, many of the R packages we use today would never have developed or would be kept behind company firewalls. Open-source provides a mechanism for code sharing and collaboration, which in turn means talent can flow from company to company across our industry, we prevent duplication of the same post-competitive tools, and we move closer to decrease the burden on reviewers by bringing consistency in both our code and outputs in a submission.</p>
 <p>Within the context of clinical reporting, we are often focussed on the benefit of inter-company collaboration on packages in the clinical domain. It is important to note though that there is already a strong track record of open source tools supported by Pharma having an impact across data science, examples include Pfizer and <code>caret</code><span class="citation" data-cites="caret">(<a href="references.html#ref-caret" role="doc-biblioref">Max Kuhn 2010</a>)</span>, Eli Lilly and <code>targets</code><span class="citation" data-cites="Targets">(<a href="references.html#ref-Targets" role="doc-biblioref">Will Landau 2022</a>)</span> and Genentech/Roche and the R language <span class="citation" data-cites="NYT Lawrence">(<a href="references.html#ref-NYT" role="doc-biblioref">Ashlee Vance 2009</a>; <a href="references.html#ref-Lawrence" role="doc-biblioref">Michael Lawrence 2018</a>)</span>.</p>
-<section id="intellectual-property-ip" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="intellectual-property-ip"><span class="header-section-number">3.1</span> Intellectual Property (IP)</h2>
-<p>IP is often bucketed into pre-competitive and competitive IP <span class="citation" data-cites="Cont2016">(<a href="references.html#ref-Cont2016" role="doc-biblioref">Contreras 2016</a>)</span>, with post-competitive being a less established term we will define in this guidance. In clinical reporting, we place significant resources into the collection and presentation of information that was collected on our competitive IP in confirmatory clinical trials. In order to help separate this simpler case from pre-competitive – here we define as post-competitive a unique scenario of code that takes data generated as part of confirmatory studies (e.g.&nbsp;a Phase III trial) and creates an output. Post-competitive IP is where the benefits of open sourcing and encouraging between company collaboration can be more clearly differentiated from potential competitive advantage in developing new medicines.</p>
+<section id="intellectual-property" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="intellectual-property"><span class="header-section-number">3.1</span> Intellectual Property</h2>
+<p>Intellectual Property (IP) is often bucketed into pre-competitive and competitive IP <span class="citation" data-cites="Cont2016">(<a href="references.html#ref-Cont2016" role="doc-biblioref">Contreras 2016</a>)</span>, with post-competitive being a less established term we will define in this guidance. In clinical reporting, we place significant resources into the collection and presentation of information that was collected on our competitive IP in confirmatory clinical trials. In order to help separate this simpler case from pre-competitive—here we define as post-competitive a unique scenario of code that takes data generated as part of confirmatory studies (e.g.&nbsp;a Phase III trial) and creates an output. Post-competitive IP is where the benefits of open sourcing and encouraging between company collaboration can be more clearly differentiated from potential competitive advantage in developing new medicines.</p>
 <p>The following summarizes the three types of IP:</p>
 <dl>
 <dt>Pre-competitive</dt>
@@ -242,7 +242,7 @@ div.csl-indent {
 </dd>
 <dt>Competitive IP</dt>
 <dd>
-<p>Clinical reporting relevant examples would be information on a new target, molecule or algorithm that provides an advantage in the creation of new medicines, or as a standalone data product that can be monetized.</p>
+<p>Relevant examples in clinical reporting would be information on a new target, molecule or algorithm that provides an advantage in the creation of new medicines, or as a standalone data product that can be monetized.</p>
 </dd>
 <dt>Post-competitive IP</dt>
 <dd>
@@ -328,7 +328,7 @@ div.csl-indent {
 </dd>
 <dt>Foundation governed</dt>
 <dd>
-<p>A legal body (e.g., non-profit) assumes control - an example organisation is the Linux Foundation which governs many projects, while in Pharma there are parallels to efforts like Transcelerate and OHDSI. There are no examples of this model within pharmaverse.org, but R/Pharma repositories do follow this model, where the registered non-profit Open Source in Pharma governs the github organisation.</p>
+<p>A legal body (e.g., non-profit) assumes control - an example organisation is the Linux Foundation which governs many projects, while in pharma there are parallels to efforts like Transcelerate and OHDSI. There are no examples of this model within pharmaverse.org, but R/Pharma repositories do follow this model, where the registered non-profit <em>Open Source in Pharma</em> governs the github organisation.</p>
 </dd>
 </dl>
 <p>If two or more companies want to formally collaborate on an open-source project, what is the role of legal contracts between the companies when the code is open-source?</p>
@@ -340,11 +340,11 @@ div.csl-indent {
 <dl>
 <dt>dplyr</dt>
 <dd>
-<p>The dplyr project is a ubiquitous in pharma, but is a generic data science package for data munging. The code owners are listed as an individual from a vendor, academia and a consultancy and it’s released under a permissive license. This package is extensively consumed, and a core dependency in data related packages like admiral. This package is heavily depended on Pharma, but no legal agreement exists beyond the permissive licencing on the project.</p>
+<p>The dplyr package is a ubiquitous in pharma, but is a generic data science package for data munging. The code owners are listed as individuals from a vendor, academia and a consultancy and it’s released under a permissive license. This package is extensively consumed, and a core dependency in data related packages like admiral. This package is heavily depended on pharma, but no legal agreement exists beyond the permissive licencing on the project.</p>
 </dd>
 <dt>gt</dt>
 <dd>
-<p>There is a large spread of table generation packages in Pharma, but several Pharma companies (Roche and GSK – add links to their issues before pub) have publicly been exploring extensions that would allow the use of gt in TLG generation for CSRs. No legal agreement exists beyond the permissive licencing on the project.</p>
+<p>There is a large spread of table generation packages in pharma, but several pharma companies, including <a href="https://github.com/rstudio/gt/issues/857">Roche</a> and <a href="https://github.com/rstudio/gt/issues/1212">GSK</a>, have publicly been exploring extensions that would allow the use of gt in TLG generation for CSRs. No legal agreement exists beyond the permissive licencing on the project.</p>
 </dd>
 <dt>pkglite</dt>
 <dd>
@@ -352,10 +352,10 @@ div.csl-indent {
 </dd>
 <dt>admiral</dt>
 <dd>
-<p>admiral is an R package for creating ADaM datasets. The copyright is held between Roche and GSK, and it is permissively licensed. A contract exists between Roche and GSK on their collaboration model. Other Pharma’s have contributed and offered to extend admiral without legal contracts in place on the original codebase.</p>
+<p>admiral is an R package for creating ADaM datasets. The copyright is held between Roche and GSK, and it is permissively licensed. A contract exists between Roche and GSK on their collaboration model. Other companies have contributed and offered to extend admiral without legal contracts in place on the original codebase.</p>
 </dd>
 </dl>
-<p>The examples above were intended to highlight that the majority of R packages used by Pharma companies are done so without legal contracts in place, beyond the license of the project, even when some collaboration takes place.</p>
+<p>The examples above were intended to highlight that the majority of R packages used by pharma companies are done so without legal contracts in place, beyond the license of the project, even when some collaboration takes place.</p>
 <p>It remains a discussion point though whether licenses are required, and the decision to create a license may become relevant if companies want to formally pool resources. It’s important to note that with permissively license projects, it is possible that if two entities want to take a package in different directions, they are able to by forking the project. So, contributions to another entities package are not lost to the contributing company.</p>
 </section>
 <section id="the-risks-of-open-sourcing" class="level2" data-number="3.9">
