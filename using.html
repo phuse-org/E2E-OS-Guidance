@@ -181,7 +181,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#how-do-i-find-open-source-projects" id="toc-how-do-i-find-open-source-projects" class="nav-link" data-scroll-target="#how-do-i-find-open-source-projects"><span class="toc-section-number">2.3</span>  How do I find open-source projects?&nbsp;</a></li>
   <li><a href="#what-do-i-do-if-i-see-a-project-i-could-use-but-it-needs-modification-for-my-use-case" id="toc-what-do-i-do-if-i-see-a-project-i-could-use-but-it-needs-modification-for-my-use-case" class="nav-link" data-scroll-target="#what-do-i-do-if-i-see-a-project-i-could-use-but-it-needs-modification-for-my-use-case"><span class="toc-section-number">2.4</span>  What do I do if I see a project I could use, but it needs modification for my use case?&nbsp;</a></li>
   <li><a href="#what-can-help-me-understand-the-risks-around-using-an-open-source-project" id="toc-what-can-help-me-understand-the-risks-around-using-an-open-source-project" class="nav-link" data-scroll-target="#what-can-help-me-understand-the-risks-around-using-an-open-source-project"><span class="toc-section-number">2.5</span>  What can help me understand the risks around using an open-source project?&nbsp;</a></li>
-  <li><a href="#licences-using-a-project" id="toc-licences-using-a-project" class="nav-link" data-scroll-target="#licences-using-a-project"><span class="toc-section-number">2.6</span>  Licences: using a project&nbsp;</a></li>
+  <li><a href="#licenses-using-a-project" id="toc-licenses-using-a-project" class="nav-link" data-scroll-target="#licenses-using-a-project"><span class="toc-section-number">2.6</span>  Licenses: using a project&nbsp;</a></li>
   </ul>
 </nav>
     </div>
@@ -208,6 +208,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="what-is-the-open-source-health-of-the-package" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="what-is-the-open-source-health-of-the-package"><span class="header-section-number">2.1</span> What is the open-source health of the package?&nbsp;</h2>
 <p>The communities that maintain and build open-source packages are diverse, and there are no set conventions on how they are maintained, resourced, and governed. There are no universal magic metrics to summarise whether an OS project is <em>‘healthy’</em>; for example if a project has had no activity for 12 months, is that because the product has been abandoned/superseded, or could it be it had a small well-defined scope and is now stable and feature complete? The following section is a non-exhaustive discussion of topics relevant when using open-source data science projects.&nbsp;</p>
+<p>CDISC Open-source Alliance (<a href="https://cosa.cdisc.org/">CDISC COSA</a>) is an initiative from CDISC, where they try to assist pharmaceutical companies navigating the difficulties outlined above by engaging with open-source projects that are funded by pharma companies and creating a curated list of projects that can be expected to have sufficient funding, as well as leverage domain knowledge from operating within the industry to solve common pain points.</p>
 </section>
 <section id="how-can-i-see-the-activity-of-an-open-source-project" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="how-can-i-see-the-activity-of-an-open-source-project"><span class="header-section-number">2.2</span> How can I see the activity of an open-source project?&nbsp;</h2>
@@ -276,22 +277,22 @@ ul.task-list li input[type="checkbox"] {
 <p>The <a href="https://pharmar.org">R validation hub</a> is a pan-pharma organisation, that aims to coordinate between pharma companies how the validation (and by extension risk) in R packages is undertaken and documented. Of particular relevance is the <a href="https://github.com/pharmaR/case_studies">Case Studies repository</a>, which contains examples from Roche, Merck and Novartis (as of July 2022) on how they approach validation and risk mitigation. The R Validation Hub also created <a href="https://www.pharmar.org/risk/"><code>riskmetric</code></a> as a tool to extract metrics relevant to validation, and is continuing work on the <a href="https://github.com/pharmaR/risk_assessment">Risk Assessment App</a>, which aims to provide an application that will surface these metrics to a user to help evaluate an R package.&nbsp;</p>
 <p>Roche has also open sourced a github-action called <a href="https://github.com/marketplace/actions/r-package-validation-report">thevalidatoR, which is available on Github Marketplace</a>, which will generate a PDF with the unit testing results, as well as a traceability matrix of documentation against tested functionality in a specified container.</p>
 <p>The <a href="https://github.com/sonatype-nexus-community/oysteR"><code>oysteR</code></a> R package can help scan R projects for known vulnerabilities via a REST API interface into the vendor tool <em>OSS Index</em> from <em>sonatype</em>.</p>
+</section>
+<section id="licenses-using-a-project" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="licenses-using-a-project"><span class="header-section-number">2.6</span> Licenses: using a project&nbsp;</h2>
 <p>Additional resources include:</p>
 <ul>
 <li>the PhUSE Connect Paper <a href="https://www.lexjansen.com/phuse-us/2019/tt/TT11.pdf"><em>How do I select an R package for my clinical workflow?</em></a> provides additional details of what two authors consider relevant when using an R package for clinical reporting.</li>
 <li>The <a href="https://www.pharmar.org/white-paper/">R Validation Hub’s white paper</a> extends the concepts discussed here by proposing a validation/risk assessment framework, which as of Q4 2023 is now being translated into an <a href="https://github.com/pharmaR/regulatory-r-repo-wg">opensource collaborative approach to validate R package across Pharma</a>.</li>
 </ul>
-</section>
-<section id="licences-using-a-project" class="level2" data-number="2.6">
-<h2 data-number="2.6" class="anchored" data-anchor-id="licences-using-a-project"><span class="header-section-number">2.6</span> Licences: using a project&nbsp;</h2>
-<p>The licence of projects you depend on, particularly if you incorporate the source code into your compiled/shared product, can have drastic effects on what you can do with your project. It is always important to seek in-house counsel advice on your companies position on different licence types.&nbsp;&nbsp;</p>
+<p>The license of projects you depend on, particularly if you incorporate the source code into your compiled/shared product, can have drastic effects on what you can do with your project. It is always important to seek in-house counsel advice on your companies position on different license types.&nbsp;&nbsp;</p>
 <p>As a general guidance:&nbsp;</p>
 <ul>
-<li>There are permissive licences that allow people to use a project in almost any way, through to copy-left licences that prevent distributing and, in some cases, monetizing any project that incorporates the dependency into its codebase.&nbsp;&nbsp;</li>
+<li>There are permissive licenses that allow people to use a project in almost any way, through to copy-left licenses that prevent distributing and, in some cases, monetizing any project that incorporates the dependency into its codebase.&nbsp;&nbsp;</li>
 </ul>
 <!-- -->
 <ul>
-<li>Two key resources to understand licence types are <a href="https://choosealicense.com/" class="uri">https://choosealicense.com/</a> and <a href="https://opensource.org/licenses" class="uri">https://opensource.org/licenses</a>.&nbsp;&nbsp;</li>
+<li>Two key resources to understand license types are <a href="https://choosealicense.com/" class="uri">https://choosealicense.com/</a> and <a href="https://opensource.org/licenses" class="uri">https://opensource.org/licenses</a>.&nbsp;&nbsp;</li>
 </ul>
 
 
