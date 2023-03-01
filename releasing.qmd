@@ -2,6 +2,8 @@
 
 Without open-source, many of the R packages we use today would never have developed or would be kept behind company firewalls. Open-source provides a mechanism for code sharing and collaboration, which in turn means talent can flow from company to company across our industry, we prevent duplication of the same post-competitive tools, and we move closer to decrease the burden on reviewers by bringing consistency in both our code and outputs in a submission.
 
+Within the context of clinical reporting, we are often focussed on the benefit of inter-company collaboration on packages in the clinical domain. It is important to note though that there is already a strong track record of open source tools supported by Pharma having an impact across data science, examples include Pfizer and `caret`[@caret], Eli Lilly and `targets`[@Targets] and Genentech/Roche and the R language [@NYT; @Lawrence]. 
+
 ## Intellectual Property (IP)
 
 IP is often bucketed into pre-competitive and competitive IP [@Cont2016], with post-competitive being a less established term we will define in this guidance. In clinical reporting, we place significant resources into the collection and presentation of information that was collected on our competitive IP in confirmatory clinical trials. In order to help separate this simpler case from pre-competitive -- here we define as post-competitive a unique scenario of code that takes data generated as part of confirmatory studies (e.g. a Phase III trial) and creates an output. Post-competitive IP is where the benefits of open sourcing and encouraging between company collaboration can be more clearly differentiated from potential competitive advantage in developing new medicines.
@@ -40,7 +42,7 @@ Ultimately, the licence chosen has an impact on how a package can be used, rathe
     -   [pharmaR](pharmaR): Houses repositories from the R Validation Hub working group.
 -   Company Github orgs
     -   Many companies maintain Github orgs either at the company or department in a company level, like [GSK-Biostatistics](https://github.com/GSK-Biostatistics), [Roche](https://github.com/Roche), [Genentech](https://github.com/Genentech), [Novartis](https://github.com/Novartis)
--   Organisation Github orgs.
+-   Organisation Github orgs, [Merck](https://github.com/Merck)
     -   [phuse-org](https://github.com/phuse-org): PHUSE projects and working groups from PHUSE.
     -   [ropensci](https://github.com/ropensci), [ropenscilabs](https://github.com/ropenscilabs), [ropensci-docs](https://github.com/ropensci-docs), etc: rOpenSci maintains several GitHub orgs, with rOpenSci housing mature R packages contributed by their staff, or peer-reviewed.
 
@@ -59,6 +61,9 @@ It is possible that decisions made before open sourcing could become a risk afte
 What are the expectations when I release a package? Are there risks to my company's brand having abandoned non-maintained packages?
 
 In this guidance it is suggested to open-source early, yet doing so could expose projects that are not ready for use, might be cancelled before reaching v1.0 or are never successfully adopted. The ratio of failed to successful projects is an important consideration, but a skew in that ratio being a negative indicator can be mitigated if repositories are clear on what stage of the product [life cycle they are at](https://lifecycle.r-lib.org/) and make use of [tools to inform users if a project has been deprecated](https://docs.github.com/en/repositories/archiving-a-github-repository/archiving-repositories), or are looking for new maintainers to take over the project.
+
+While transperancy on lifecycles can help to ensure no negative reactions come from early software, robust software can have a positive effect on how others view your project. [ROpenSci's statistical software review guide](https://stats-devguide.ropensci.org/) includes many recomendations for reviewers 
+that you can also take and apply to your software as you prepare for a version 1.0 release. The [r-pks.org](https://r-pkgs.org/) guide by Hadley Wickham also contains many of the best practices users may expect in a modern R package.
 
 ## Licences: releasing a project
 
