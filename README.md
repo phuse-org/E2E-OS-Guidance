@@ -49,28 +49,36 @@ reach out if you have suggestions to improve this document.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<!-- GETTING STARTED -->
-## Rebuilding this site
-
-### Installation
-
-1. Make a branch, apply your edits and then make a pull request (PR) onto main
-2. The website is built and deployed from a gh-action, so you do not need to pre-render
-3. If you would like to see what the website looks like before making a PR, you can navigate to the folder on your clone and run `quarto preview`.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- CONTRIBUTING -->
 ## Contributing
 
 Contributions are what make this document valuable. Please reach out via the issues, 
-ask a co-lead, or get in [contact with PhUSE](https://phuse.global/Community/Get_Involved).
+ask a co-lead, contribute directly, or get in [contact with PhUSE](https://phuse.global/Community/Get_Involved).
 
+### Direct contribution
 
+If you want to contribute to the documents directly you can:
+
+  1. Fork the project
+  1. Clone the fork to your machine
+  1. Make a branch
+  1. Apply your edits and commit
+  1. Push your change to your fork 
+  1. Create a pull request (PR) onto main
+
+### Rebuilding this site
+
+The website is built and deployed automatically with GitHub Actions, so there is no formal need to pre-render before contributing. However, if you would like to see the rendered website looks **before** making a PR, you can either
+
+  * Navigate to the folder on your clone and run `quarto preview`, provided you have [quarto](https://quarto.org/) installed, 
+   
+or
+   
+  1. Open the `E2E-OS-Guidance.Rproj` in RStudio (sufficiently new)
+  1. Open the `index.qmd` file
+  1. Press "Render".
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 ## License
