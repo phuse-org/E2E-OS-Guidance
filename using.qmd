@@ -43,6 +43,8 @@ Numerous methods exist to find projects. Specific to R projects, the following s
  - The [R universe](https://r-universe.dev/search/) hosts ecosystems of packages in CRAN-like repositories.  As an example, the pharmaverse has the 'bleeding edge' of the main branches of all included R package  available as a [CRAN-like repository](https://pharmaverse.r-universe.dev/builds).
  - [rseek.org](http://rseek.org): Google filter for R relevant content.
  - [rinpharma.com/publication](http://rinpharma.com/publication): the proceedings of the R/Pharma conference contain many relevant projects.
+ - [ROpenSci](https://ropensci.org/packages/all/): maintains a list of packages they have vetted through their software review process, and they also [categorise the packages by domain](https://ropensci.org/packages/).
+
 
 ## What do I do if I see a project I could use, but it needs modification for my use case?
 
@@ -75,3 +77,4 @@ As a general guidance:
 
  - There are permissive licences that allow people to use a project in almost any way, through to copy-left licences that prevent distributing and, in some cases, monetizing any project that incorporates the dependency into its codebase.
  - Two key resources to understand licence types are <https://choosealicense.com/> and <https://opensource.org/licenses>.
+
