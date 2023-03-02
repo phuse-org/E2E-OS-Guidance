@@ -49,27 +49,40 @@ reach out if you have suggestions to improve this document.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make this document valuable. Please reach out via the issues, 
+ask a co-lead, jump straight in with a PR, or get 
+in [contact with PhUSE](https://phuse.global/Community/Get_Involved).
 
 
 <!-- GETTING STARTED -->
 ## Rebuilding this site
 
-### Installation
+### Building locally
 
-1. Make a branch, apply your edits and then make a pull request (PR) onto main
-2. The website is built and deployed from a gh-action, so you do not need to pre-render
-3. If you would like to see what the website looks like before making a PR, you can navigate to the folder on your clone and run `quarto preview`.
+1. Clone a copy of the repo
+2. Make some edits to the `.qmd` files.
+3. Navigate to the folder on your clone and run `quarto preview` to see a preview.
+
+
+As the site is built on main from a gh-action, you don't need to do a 'full' render locally.
+
+
+### Making a pull request
+
+If you would like to contribute code, we follow a very simple git flow where there is a main branch,
+with no develop or staging.
+
+In order to contribute code (assumption is you do not have write access):
+
+1. Make a fork of this repo
+1. Optionally make a branch, then apply your edits and commit them
+2. Push the code up to your fork, then make a pull request (PR) onto the `main` branch of this repo
+3. The website is built and deployed from a gh-action, so you do not need to pre-render. If you have any new built artifacts from your changes (things created by `quarto render`), please do not commit them to the repo.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make this document valuable. Please reach out via the issues, 
-ask a co-lead, or get in [contact with PhUSE](https://phuse.global/Community/Get_Involved).
-
 
 
 <!-- LICENSE -->
