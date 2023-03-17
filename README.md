@@ -44,7 +44,9 @@
 
 [![Screenshot][product-screenshot]](https://phuse-org.github.io/E2E-OS-Guidance/)
 
-This guidance was built through the contributions of [individuals across multiple companies](https://phuse-org.github.io/E2E-OS-Guidance/contributors.html). Please use the issues to 
+This guidance was built through the contributions 
+of [individuals across multiple companies](https://phuse-org.github.io/E2E-OS-Guidance/contributors.html). 
+Please use the issues to 
 reach out if you have suggestions to improve this document. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
