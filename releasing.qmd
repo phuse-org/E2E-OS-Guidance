@@ -113,17 +113,16 @@ When discussing the open sourcing of a codebase, it is important to flag to
 internal counsel existing external projects, and the overlap of scope with 
 the project you intend to release.
 
-It is possible that decisions made before open sourcing could become a risk 
-after open sourcing. As an example of a plausible scenario; a team need to 
-implement a new function. This function exists in another GPL-3 copy left 
+It is possible that decisions made during development can become license liabilities. You may at first think it's unlikely someone would copy and paste code into an already open sourced project, but as an example of a plausible scenario that has been seen by at least one guidelines author; a team need to 
+implement a new function in an internal codebase. This function exists in another GPL-3 copy left 
 licenced project. To add that project would introduce multiple dependencies that 
 aren't used by that particular function so a member of the team decides to copy 
-the function into the package. One year later, the package is open sourced under 
-MIT. This would be a license breach as the authors have re-released copy-left 
+the function into the package. Then the package is later open sourced under 
+MIT, but the copy and pasted code is 'forgotten about'. This would be a license breach as the authors have re-released copy-left 
 code as permissive, and have incoporated the code without flagging it's source, 
 changes they made, and the original licence (GPL3 requirements).
 
-Such an occurrence could be lessened by a Contributor Licence Agreement 
+The risk on already open sourced projects can also be lessened by a Contributor Licence Agreement 
 (CLA; see [the bot contributor-assistant](https://github.com/contributor-assistant/github-action) 
 for an example of CLA automation). A CLA helps ensure that anyone contributing 
 to a project acknowledges specific terms expected of contributions, like the 
