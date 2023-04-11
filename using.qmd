@@ -22,7 +22,7 @@ Many, but not all, open-source projects are on [github.com](https://github.com)
 or [gitlab.com](https://gitlab.com). On github.com, every repo contains a tab 
 called Insights, from where you can see information on the people who 
 contributed lines of code to a project. Of a particular interest might be 
-the Contributor tab within Insights, an example screenshot of the dplyr R 
+the Contributor tab within Insights, an example screenshot of the `dplyr` R 
 package contributor page is in @fig-dplyr.
 
 Some sites like [openpharma.pharmaverse.org](http://openpharma.pharmaverse.org) 
@@ -31,7 +31,7 @@ Some sites like [openpharma.pharmaverse.org](http://openpharma.pharmaverse.org)
 GitHub) also provide more specific insights into the community engagement 
 behind each project hosted on [github.com](https://github.com/).
 
-![Screenshot from Insight tab for the dplyr R package](assets/ghdplyr.png){#fig-dplyr}
+![Screenshot from Insight tab for the `dplyr` R package](assets/ghdplyr.png){#fig-dplyr}
 
 ### The community behind a project
 
@@ -40,7 +40,7 @@ of a project. Two examples are:
 
  - A project could have almost no active community in terms of recent 
  contributions or response to issues, much like the R 
- package [survival](https://github.com/therneau/survival), yet be a stable and 
+ package [`survival`](https://github.com/therneau/survival), yet be a stable and 
  critical package in R installations. 
  - A project could also have no activity as it has been abandoned after or 
  before it reached v1.0.
@@ -61,7 +61,7 @@ in discussion and coordination?
 
 Packages can also be open sourced without having the place they develop the 
 code exposed to the general public. An example is the 
-[randomForest](https://www.stat.berkeley.edu/~breiman/RandomForests/) package, 
+[`randomForest`](https://www.stat.berkeley.edu/~breiman/RandomForests/) package, 
 which is an open sourced (GPL-2/3) R package where the source code of the 
 releases is open sourced for use, but the package authors do not give users 
 access to view the place where they develop code. This does not mean the quality 
@@ -115,9 +115,9 @@ Using R packages as an example, if your analysis plan requires creating a
 Kaplan-Meier plot, you could implement this using open code you program using R 
 base plotting functions. Alternatively, you could introduce a dependency on a 
 package that provides that functionality as a parameterised function, 
-like [survminer](https://github.com/kassambara/survminer/), 
-[visR](https://github.com/openpharma/visR/) or 
-[tern](https://github.com/insightsengineering/tern/). Occasionally an existing 
+like [`survminer`](https://github.com/kassambara/survminer/), 
+[`visR`](https://github.com/openpharma/visR/) or 
+[`tern`](https://github.com/insightsengineering/tern/). Occasionally an existing 
 package may be missing a feature you want, as can be derived from the presence 
 of at least 3 R packages with a Kaplan-Meier plotting function. In such cases, 
 you may need to extend, or start a new package.
