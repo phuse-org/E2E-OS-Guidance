@@ -5,7 +5,7 @@ book:
   title: "End-to-End Open-source Collaboration Guidance"
   subtitle: "Data Visualisation & Open Source Technology Working Group"
   edition: "DRAFT"
-  author: "PhUSE Working Group"
+  author: "PHUSE Working Group"
   repo-url: https://github.com/phuse-org/E2E-OS-Guidance
   #date: "2/2/2023"
   abstract: "This whitepaper provides guidance on the use of Open-Source Software (OSS), as well as collaboration on and creation of open-source projects used by data scientists in clinical reporting workflows"

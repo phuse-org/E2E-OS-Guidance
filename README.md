@@ -26,7 +26,7 @@
 <h3 align="center">E2E OS guidance</h3>
 
   <p align="center">
-    A pan-company effort to help guide open source use and contributions sponsored by PhUSE.
+    A pan-company effort to help guide open source use and contributions sponsored by PHUSE.
     <br />
     <a href="https://phuse-org.github.io/E2E-OS-Guidance/"><strong>Explore the guidance »</strong></a>
     <br />
@@ -56,7 +56,7 @@ reach out if you have suggestions to improve this document.
 
 Contributions are what make this document valuable. Please reach out via the issues, 
 ask a co-lead, jump straight in with a PR, or get 
-in [contact with PhUSE](https://phuse.global/Community/Get_Involved).
+in [contact with PHUSE](https://phuse.global/Community/Get_Involved).
 
 
 <!-- GETTING STARTED -->

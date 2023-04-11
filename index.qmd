@@ -1,7 +1,7 @@
 # Guidance scope and purpose {.unnumbered}
 
 The primary aim of this collaboration is to provide guidance within the context 
-of how open source is relevant to PhUSE members, and link out to more 
+of how open source is relevant to PHUSE members, and link out to more 
 information to avoid duplication on more generalisable topics. In this guidance, 
 R packages are referenced as an example OSS project that is a focal point today 
 in clinical reporting, but the principles extend to other libraries in python, 

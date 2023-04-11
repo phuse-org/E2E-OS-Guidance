@@ -1,9 +1,9 @@
-# Using open source
+# Using open-source
 
 The following section is a non-exhaustive discussion of topics relevant when 
 using open-source data science projects.
 
-## What is the open-source health of the package?
+## Open-source health 
 
 The communities that maintain and build open-source packages are diverse, 
 and there are no set conventions on how they are maintained, resourced, and 
@@ -16,13 +16,13 @@ considered 'done' and not necessarily because the project has been
 abandoned/superseded. 'Done' in the sense of being stable and feature 
 complete perhaps due to a small and well-defined scope.
 
-## How can I see the activity of an open-source project?
+## Understanding an open-source project
 
 Many, but not all, open-source projects are on [github.com](https://github.com) 
 or [gitlab.com](https://gitlab.com). On github.com, every repo contains a tab 
 called Insights, from where you can see information on the people who 
 contributed lines of code to a project. Of a particular interest might be 
-the Contributor tab within Insights, an example screenshot of the dplyr R 
+the Contributor tab within Insights, an example screenshot of the `dplyr` R 
 package contributor page is in @fig-dplyr.
 
 Some sites like [openpharma.pharmaverse.org](http://openpharma.pharmaverse.org) 
@@ -31,16 +31,16 @@ Some sites like [openpharma.pharmaverse.org](http://openpharma.pharmaverse.org)
 GitHub) also provide more specific insights into the community engagement 
 behind each project hosted on [github.com](https://github.com/).
 
-![Screenshot from Insight tab for the dplyr R package](assets/ghdplyr.png){#fig-dplyr}
+![Screenshot from Insight tab for the `dplyr` R package](assets/ghdplyr.png){#fig-dplyr}
 
-### How active are the community behind a project?
+### The community behind a project
 
 The activity on a project alone does not tell you the quality and extent of use 
 of a project. Two examples are:
 
  - A project could have almost no active community in terms of recent 
  contributions or response to issues, much like the R 
- package [survival](https://github.com/therneau/survival), yet be a stable and 
+ package [`survival`](https://github.com/therneau/survival), yet be a stable and 
  critical package in R installations. 
  - A project could also have no activity as it has been abandoned after or 
  before it reached v1.0.
@@ -61,7 +61,7 @@ in discussion and coordination?
 
 Packages can also be open sourced without having the place they develop the 
 code exposed to the general public. An example is the 
-[randomForest](https://www.stat.berkeley.edu/~breiman/RandomForests/) package, 
+[`randomForest`](https://www.stat.berkeley.edu/~breiman/RandomForests/) package, 
 which is an open sourced (GPL-2/3) R package where the source code of the 
 releases is open sourced for use, but the package authors do not give users 
 access to view the place where they develop code. This does not mean the quality 
@@ -85,7 +85,7 @@ Some things to consider when trying to establish the activity of a community are
  and the codebase? A thing to also look for is whether closed issues are 
  resolved, as some projects use bots to automatically close stale issues.
 
-## How do I find open-source projects?
+## Finding open-source projects
 
 Numerous methods exist to find projects. Specific to R projects, the following 
 sources exist:
@@ -109,15 +109,15 @@ sources exist:
  also [categorise the packages by domain](https://ropensci.org/packages/).
 
 
-## What do I do if I see a project I could use, but it needs modification for my use case?
+## Balancing extending vs creating
 
 Using R packages as an example, if your analysis plan requires creating a 
 Kaplan-Meier plot, you could implement this using open code you program using R 
 base plotting functions. Alternatively, you could introduce a dependency on a 
 package that provides that functionality as a parameterised function, 
-like [survminer](https://github.com/kassambara/survminer/), 
-[visR](https://github.com/openpharma/visR/) or 
-[tern](https://github.com/insightsengineering/tern/). Occasionally an existing 
+like [`survminer`](https://github.com/kassambara/survminer/), 
+[`visR`](https://github.com/openpharma/visR/) or 
+[`tern`](https://github.com/insightsengineering/tern/). Occasionally an existing 
 package may be missing a feature you want, as can be derived from the presence 
 of at least 3 R packages with a Kaplan-Meier plotting function. In such cases, 
 you may need to extend, or start a new package.
@@ -130,7 +130,7 @@ new one. Some resources to help understand how to contribute to a new package ar
 - Many packages have a CONTRIBUTING.md file, or mention in the README.md, how 
 you can contribute. They may also be a dedicated tag for issues discussing new features (e.g. `'enhancements'`).
 
-## What can help me understand the risks around using an open-source project?
+## Understanding the risks of using open-source
 
 Risk can come from several domains including;
 
@@ -161,7 +161,7 @@ of establishing and maintaining a ‘repository’ of R packages with accompanyi
 evidence of their quality and the assessment criteria, that can be used to 
 simplify necessary in-house validation processes as much as possible.
 
-### What tools can help document risk in R packages?
+### Tools that help document risk in R packages
 
 Two toolsets have been released specifically for R packages, which differ in their
 underlying philosophy. 
@@ -185,7 +185,7 @@ information that can be used to create necessary evidence for validation.
 
 The [`oysteR`](https://github.com/sonatype-nexus-community/oysteR) R package can help scan R projects for known vulnerabilities via a REST API interface into the vendor tool _OSS Index_ from _sonatype_.
 
-## Licences: using a project
+## The impact of different licences
 
 The licence of projects you depend on, particularly if you incorporate the source code into your compiled/shared product, can have drastic effects on what you can do with your project. It is always important to seek in-house counsel advice on your companies position on different licence types.
 
