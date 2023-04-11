@@ -48,7 +48,7 @@ Post-competitive IP
 
 :   A less common term we have defined to be where code collaboration improves 
 the efficency of insights, rather than the creation of insights that would 
-otherwise not be possible. In the context of PhUSE collaborators, this 
+otherwise not be possible. In the context of PHUSE collaborators, this 
 includes packages that take CDISC data and apply templated data steps and 
 visualizations to prepare a CSR, like those seen in 
 the [pharmaverse](https://pharmaverse.org/). 
