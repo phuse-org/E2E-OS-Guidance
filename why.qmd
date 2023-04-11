@@ -47,12 +47,12 @@ have these restrictions so you can focus all your resources on end-user value,
 Open-sourcing software solutions is also a mindset approach. As you use 
 available open-source code, you are using bits and pieces to create a piece 
 of software/analytics that is greater than the individual parts. By 
-open-sourcing your solution, you give others the opportunity to build ontop of 
+open-sourcing your solution, you give others the opportunity to build on top of 
 your work, as well as improve your work itself by contributing. Ultimately, 
 this comes back around to yourself: What you have available at your disposal 
 is now greater, than if you worked in a silo.
 
-Open-source is also a step towards ensuring repoducibility. Consider an 
+Open-source is also a step towards ensuring reproducibility. Consider an 
 analysis done in a propriety language by a pharmaceutical company. An academic 
 accessing the same data through a data sharing initiative may find results 
 that contradict those done using the propriety tool. Such a researcher would 
