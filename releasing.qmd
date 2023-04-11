@@ -14,7 +14,7 @@ source tools supported by Pharma having an impact on data science beyond our
 industry, examples include Pfizer and `caret`[@caret], Eli Lilly and 
 `targets`[@Targets] and Genentech/Roche and the R language [@NYT; @Lawrence]. 
 
-## Intellectual Property 
+## Types of intellectual property
 
 Intellectual Property (IP) is often bucketed into pre-competitive and 
 competitive IP [@Cont2016], with post-competitive being a less established 
@@ -55,7 +55,7 @@ the [pharmaverse](https://pharmaverse.org/).
 
 ## Preparing for release
 
-### When is a good time to open source?
+### Timing of releases relative to project lifecycle
 
 As a general rule *arising IP* [@LawArising], that is IP generated as part of 
 the project, is simpler to handle than *background IP* that already exists. 
@@ -65,7 +65,7 @@ helps to encourage defining a clear scope from day one, and encourage others
 to engage early rather than initiate additional projects that later may not 
 be compatible without significant re-factoring.
 
-### Does it matter where you put a package on github.com?
+### Impact of where you host a project
 
 What are the differences between GitHub organizations that host packages 
 like [phuse-org](https://github.com/phuse-org), 
@@ -96,7 +96,7 @@ packages trajectory. Some examples are;
     *   [phuse-org](https://github.com/phuse-org): PHUSE projects and working groups from PHUSE.
     *   [ropensci](https://github.com/ropensci), [ropenscilabs](https://github.com/ropenscilabs), [ropensci-docs](https://github.com/ropensci-docs), etc: rOpenSci maintains several GitHub orgs, with rOpenSci housing mature R packages contributed by their staff, or peer-reviewed.
 
-### What is important to look for when releasing a package that started life internally?
+### Moving from inner sourced to open source
 
 If a package started its development on an internal git server, or a private 
 repository on github.com, there could be some risk of exposing data either 
@@ -107,7 +107,7 @@ recommendation is to always flatten the commit history, and wipe issues by
 starting a new git repository when open sourcing unless you are certain no 
 information can be leaked.
 
-## Could others claim we stole their IP?
+## Avoiding the misuse of other intellectual property
 
 When discussing the open sourcing of a codebase, it is important to flag to 
 internal counsel existing external projects, and the overlap of scope with 
@@ -132,7 +132,7 @@ code within the package is original, and there is no culture of cannibalising
 external code and infringing on people's copyright within the development 
 team.
 
-## Reputational risks and supporting others
+## Mitigating reputational risks
 
 What are the expectations when I release a package? Are there risks to my 
 company's brand having abandoned non-maintained packages?
@@ -154,7 +154,7 @@ that you can also take and apply to your software as you prepare for a version
 1.0 release. The [r-pks.org](https://r-pkgs.org/) guide by Hadley Wickham also 
 contains many of the best practices users may expect in a modern R package.
 
-## Licences: releasing a project
+## Licences for releasing code
 
 Ultimately, the licence used for a project would require in-house counsel 
 guidance on what licence is preferred.
@@ -194,7 +194,7 @@ modification from its inception. When under a permissive license, you could
 change to a license with more requirements, but this would not rescind the 
 historical codebase that has a more permissive license.
 
-## Collaboration and governance models
+## Common governance models 
 
 Open-sourcing a project allows others to leverage the code, but the ultimate goal 
 is often that the open-source community adopts and helps extend and evolve the 
@@ -202,8 +202,6 @@ project. How projects govern this shared development is diverse. A commonality
 across all projects is that the repository, and it's `main`/production branch, 
 will have some form of write access control, meaning a level of governance is 
 present even if it's not formalised.
-
-## What different governance models exist for open source?
 
 There is no definitive definition of open-source governance models. The 
 following models are based on mapping 
@@ -226,11 +224,11 @@ Foundation governed
 
 :   A legal body (e.g., non-profit) assumes control - an example organisation is the Linux Foundation which governs many projects, while in pharma there are parallels to efforts like Transcelerate and OHDSI. There are no examples of this model within pharmaverse.org, but R/Pharma repositories do follow this model, where the registered non-profit _Open Source in Pharma_ governs the github organisation.
 
-## If two or more companies want to formally collaborate on an open-source project, what is the role of legal contracts between the companies when the code is open-source?
+## The role of contracts in inter-company open-source ollaboration
 
 Contributions to open-source code can come in many forms, and there is a great deal of diversity in projects relevant to clinical reporting. This is an emerging area for pharma companies, and so we will focus on promoting awareness, rather than giving firm guidelines.
 
-## When do we need contracts?
+### Annotated examples of the role of contracts in open-source projects
 
 When initiating a project like an R package, or when another company is considering investing in collaboration to an existing project, there could be a discussion on having a legal framework layered on top of the collaboration. To help contextualise this, we will use four example projects.
 
@@ -254,7 +252,7 @@ The examples above were intended to highlight that the majority of R packages us
 
 It remains a discussion point though whether licenses are required, and the decision to create a license may become relevant if companies want to formally pool resources. It's important to note that with permissively license projects, it is possible that if two entities want to take a package in different directions, they are able to by forking the project. So, contributions to another entities package are not lost to the contributing company.
 
-## The risks of open-sourcing
+## Liability to users
 
 One open question is often how does open-sourcing open a company up to liability, indemnity and warranties. We previously discussed CLA bots, as a mechanism to reinforce the need for contributions to be original, and never cannibalised from another project. For remaining risks from others using an open sourced codebase, licenses will include some language. As an example, 50% of the MIT license is devoted to this topic with the following working:
 
