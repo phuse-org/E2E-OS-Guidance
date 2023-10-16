@@ -36,10 +36,16 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Render 
+      - name: Render guidance
         run: |
           quarto render
-          quarto render slides/eu23
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Render slides
+        run: |
+          quarto render
+        working-directory: slides/eu23
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
