@@ -1,5 +1,8 @@
 project:
   type: book
+  render:
+    - "*.qmd"
+    - "!slides/" # do not render slides folder
 
 book:
   title: "End-to-End Open-source Collaboration Guidance"
