@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.475">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,14 +17,15 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -38,8 +39,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -76,7 +76,8 @@ div.csl-indent {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -87,11 +88,16 @@ div.csl-indent {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Releasing open source</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./releasing.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Releasing open source</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -99,7 +105,7 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="./index.html" class="sidebar-logo-link">
       <img src="./assets/phuse.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
@@ -107,107 +113,119 @@ div.csl-indent {
     <div class="sidebar-title mb-0 py-0">
       <a href="./">End-to-End Open-source Collaboration Guidance</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/phuse-org/E2E-OS-Guidance" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
-    <a href="" title="Download" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-download"></i></a>
-    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="./End-to-End-Open-source-Collaboration-Guidance.pdf">
-            <i class="bi bi-bi-file-pdf pe-1"></i>
-          Download PDF
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="./End-to-End-Open-source-Collaboration-Guidance.docx">
-            <i class="bi bi-bi-file-word pe-1"></i>
-          Download Docx
-          </a>
-        </li>
-    </ul>
-    <a href="" title="Share" id="sidebar-tool-dropdown-1" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-share"></i></a>
-    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-1">
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-            <i class="bi bi-bi-twitter pe-1"></i>
-          Twitter
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
-            <i class="bi bi-bi-facebook pe-1"></i>
-          Facebook
-          </a>
-        </li>
-    </ul>
+    <a href="https://github.com/phuse-org/E2E-OS-Guidance" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./End-to-End-Open-source-Collaboration-Guidance.pdf">
+              <i class="bi bi-bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./End-to-End-Open-source-Collaboration-Guidance.docx">
+              <i class="bi bi-bi-file-word pe-1"></i>
+            Download Docx
+            </a>
+          </li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+      </ul>
+    </div>
 </div>
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Guidance scope and purpose</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guidance scope and purpose</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./definitions.html" class="sidebar-item-text sidebar-link">Definitions</a>
+  <a href="./definitions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Definitions</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./why.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Open source: the what and why</span></a>
+  <a href="./why.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Open source: the what and why</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./using.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Using open-source</span></a>
+  <a href="./using.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Using open-source</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./releasing.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Releasing open source</span></a>
+  <a href="./releasing.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Releasing open source</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./contributors.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Contributors</span></a>
+  <a href="./contributors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Contributors</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#types-of-intellectual-property" id="toc-types-of-intellectual-property" class="nav-link active" data-scroll-target="#types-of-intellectual-property"><span class="toc-section-number">3.1</span>  Types of intellectual property</a></li>
-  <li><a href="#preparing-for-release" id="toc-preparing-for-release" class="nav-link" data-scroll-target="#preparing-for-release"><span class="toc-section-number">3.2</span>  Preparing for release</a>
+  <li><a href="#types-of-intellectual-property" id="toc-types-of-intellectual-property" class="nav-link active" data-scroll-target="#types-of-intellectual-property"><span class="header-section-number">3.1</span> Types of intellectual property</a></li>
+  <li><a href="#preparing-for-release" id="toc-preparing-for-release" class="nav-link" data-scroll-target="#preparing-for-release"><span class="header-section-number">3.2</span> Preparing for release</a>
   <ul class="collapse">
-  <li><a href="#timing-of-releases-relative-to-project-lifecycle" id="toc-timing-of-releases-relative-to-project-lifecycle" class="nav-link" data-scroll-target="#timing-of-releases-relative-to-project-lifecycle"><span class="toc-section-number">3.2.1</span>  Timing of releases relative to project lifecycle</a></li>
-  <li><a href="#impact-of-where-you-host-a-project" id="toc-impact-of-where-you-host-a-project" class="nav-link" data-scroll-target="#impact-of-where-you-host-a-project"><span class="toc-section-number">3.2.2</span>  Impact of where you host a project</a></li>
-  <li><a href="#moving-from-inner-sourced-to-open-source" id="toc-moving-from-inner-sourced-to-open-source" class="nav-link" data-scroll-target="#moving-from-inner-sourced-to-open-source"><span class="toc-section-number">3.2.3</span>  Moving from inner sourced to open source</a></li>
+  <li><a href="#timing-of-releases-relative-to-project-lifecycle" id="toc-timing-of-releases-relative-to-project-lifecycle" class="nav-link" data-scroll-target="#timing-of-releases-relative-to-project-lifecycle"><span class="header-section-number">3.2.1</span> Timing of releases relative to project lifecycle</a></li>
+  <li><a href="#impact-of-where-you-host-a-project" id="toc-impact-of-where-you-host-a-project" class="nav-link" data-scroll-target="#impact-of-where-you-host-a-project"><span class="header-section-number">3.2.2</span> Impact of where you host a project</a></li>
+  <li><a href="#moving-from-inner-sourced-to-open-source" id="toc-moving-from-inner-sourced-to-open-source" class="nav-link" data-scroll-target="#moving-from-inner-sourced-to-open-source"><span class="header-section-number">3.2.3</span> Moving from inner sourced to open source</a></li>
   </ul></li>
-  <li><a href="#avoiding-the-misuse-of-other-intellectual-property" id="toc-avoiding-the-misuse-of-other-intellectual-property" class="nav-link" data-scroll-target="#avoiding-the-misuse-of-other-intellectual-property"><span class="toc-section-number">3.3</span>  Avoiding the misuse of other intellectual property</a></li>
-  <li><a href="#mitigating-reputational-risks" id="toc-mitigating-reputational-risks" class="nav-link" data-scroll-target="#mitigating-reputational-risks"><span class="toc-section-number">3.4</span>  Mitigating reputational risks</a></li>
-  <li><a href="#licences-for-releasing-code" id="toc-licences-for-releasing-code" class="nav-link" data-scroll-target="#licences-for-releasing-code"><span class="toc-section-number">3.5</span>  Licences for releasing code</a></li>
-  <li><a href="#common-governance-models" id="toc-common-governance-models" class="nav-link" data-scroll-target="#common-governance-models"><span class="toc-section-number">3.6</span>  Common governance models</a></li>
-  <li><a href="#the-role-of-contracts-in-inter-company-open-source-ollaboration" id="toc-the-role-of-contracts-in-inter-company-open-source-ollaboration" class="nav-link" data-scroll-target="#the-role-of-contracts-in-inter-company-open-source-ollaboration"><span class="toc-section-number">3.7</span>  The role of contracts in inter-company open-source ollaboration</a>
+  <li><a href="#avoiding-the-misuse-of-other-intellectual-property" id="toc-avoiding-the-misuse-of-other-intellectual-property" class="nav-link" data-scroll-target="#avoiding-the-misuse-of-other-intellectual-property"><span class="header-section-number">3.3</span> Avoiding the misuse of other intellectual property</a></li>
+  <li><a href="#mitigating-reputational-risks" id="toc-mitigating-reputational-risks" class="nav-link" data-scroll-target="#mitigating-reputational-risks"><span class="header-section-number">3.4</span> Mitigating reputational risks</a></li>
+  <li><a href="#licences-for-releasing-code" id="toc-licences-for-releasing-code" class="nav-link" data-scroll-target="#licences-for-releasing-code"><span class="header-section-number">3.5</span> Licences for releasing code</a></li>
+  <li><a href="#common-governance-models" id="toc-common-governance-models" class="nav-link" data-scroll-target="#common-governance-models"><span class="header-section-number">3.6</span> Common governance models</a></li>
+  <li><a href="#the-role-of-contracts-in-inter-company-open-source-ollaboration" id="toc-the-role-of-contracts-in-inter-company-open-source-ollaboration" class="nav-link" data-scroll-target="#the-role-of-contracts-in-inter-company-open-source-ollaboration"><span class="header-section-number">3.7</span> The role of contracts in inter-company open-source ollaboration</a>
   <ul class="collapse">
-  <li><a href="#annotated-examples-of-the-role-of-contracts-in-open-source-projects" id="toc-annotated-examples-of-the-role-of-contracts-in-open-source-projects" class="nav-link" data-scroll-target="#annotated-examples-of-the-role-of-contracts-in-open-source-projects"><span class="toc-section-number">3.7.1</span>  Annotated examples of the role of contracts in open-source projects</a></li>
+  <li><a href="#annotated-examples-of-the-role-of-contracts-in-open-source-projects" id="toc-annotated-examples-of-the-role-of-contracts-in-open-source-projects" class="nav-link" data-scroll-target="#annotated-examples-of-the-role-of-contracts-in-open-source-projects"><span class="header-section-number">3.7.1</span> Annotated examples of the role of contracts in open-source projects</a></li>
   </ul></li>
-  <li><a href="#liability-to-users" id="toc-liability-to-users" class="nav-link" data-scroll-target="#liability-to-users"><span class="toc-section-number">3.8</span>  Liability to users</a></li>
+  <li><a href="#liability-to-users" id="toc-liability-to-users" class="nav-link" data-scroll-target="#liability-to-users"><span class="header-section-number">3.8</span> Liability to users</a></li>
   </ul>
 </nav>
     </div>
@@ -216,7 +234,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Releasing open source</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Releasing open source</span></h1>
 </div>
 
 
@@ -368,23 +386,23 @@ div.csl-indent {
 </blockquote>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
-<div id="ref-NYT" class="csl-entry" role="doc-biblioentry">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-NYT" class="csl-entry" role="listitem">
 Ashlee Vance. 2009. <span>“Data Analysts Captivated by r’s Power.”</span> <em>New York Times</em>.
 </div>
-<div id="ref-Cont2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Cont2016" class="csl-entry" role="listitem">
 Contreras, Jorge. 2016. <span>“Pre-Competition.”</span> <em>North Corolina Law Review</em> 95 (1): Article 3.
 </div>
-<div id="ref-LawArising" class="csl-entry" role="doc-biblioentry">
+<div id="ref-LawArising" class="csl-entry" role="listitem">
 Law Insider. 2022. <span>“Arising Intellectual Property Definition.”</span> <a href="https://www.lawinsider.com/dictionary/arising-intellectual-property">https://www.lawinsider.com/dictionary/arising-intellectual-property</a>.
 </div>
-<div id="ref-caret" class="csl-entry" role="doc-biblioentry">
+<div id="ref-caret" class="csl-entry" role="listitem">
 Max Kuhn. 2010. <span>“The Caret Package: A Unified Interface for Predictive Models.”</span>
 </div>
-<div id="ref-Lawrence" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Lawrence" class="csl-entry" role="listitem">
 Michael Lawrence. 2018. <span>“Michael Lawrence - r-Core/Bioconductor Core Role at Genentech.”</span> <a href="https://www.linkedin.com/in/michael-lawrence-74a9b482/">https://www.linkedin.com/in/michael-lawrence-74a9b482/</a>.
 </div>
-<div id="ref-Targets" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Targets" class="csl-entry" role="listitem">
 Will Landau. 2022. <span>“The <span class="nocase">targets</span> r Package User Manual.”</span> <a href="https://books.ropensci.org/targets/">https://books.ropensci.org/targets/</a>.
 </div>
 </div>
@@ -418,9 +436,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -485,6 +517,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
