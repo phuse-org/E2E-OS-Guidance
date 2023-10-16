@@ -30,6 +30,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Install R packages
+        run: |
+          Rscript -e "install.packages('rmarkdown', repos='https://packagemanager.posit.co/cran/2023-10-13')"
+          Rscript -e "install.packages('dplyr', repos='https://packagemanager.posit.co/cran/2023-10-13')"
+          Rscript -e "install.packages('gt', repos='https://packagemanager.posit.co/cran/2023-10-13')"
+          Rscript -e "install.packages('gtExtras', repos='https://packagemanager.posit.co/cran/2023-10-13')"
+
       - name: Render PHUSE slides
         uses: quarto-dev/quarto-actions/render@v2
         with:
