@@ -1,0 +1,229 @@
+---
+from: markdown+emoji
+execute: 
+  cache: true
+format: 
+  letterbox-revealjs:
+    css: [custom.css, hex.css, timeline.css]
+    progress: false
+    menu: false
+    width: 1280
+    height: 720
+callout-appearance: simple
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+library(magrittr)
+```
+
+## {}
+
+::: columns
+::: {.column width="40%"}
+
+:::
+::: {.column width="60%"}
+
+::: {.title data-id="title"}
+PHUSE End-to-End OS Collaboration Guidance
+:::
+
+::: {.dateplace}
+2023-11-06 @ PHUSE EU 2023
+:::
+
+##### James Black & Mike Stackhouse
+
+::: {.callout-note icon=false}
+
+Links to the guidance and slides
+
+![](img/icon-webdoc.png){.icon} [phuse-org.github.io/E2E-OS-Guidance/](https://phuse-org.github.io/E2E-OS-Guidance/)
+
+![](img/icon-presentation.png){.icon} [phuse-org.github.io/E2E-OS-Guidance/slides/eu23](https://phuse-org.github.io/E2E-OS-Guidance/slides/eu23/)
+
+:::
+
+:::
+:::
+
+![](img/website-app.png){.image-left}
+
+## Why is guidance needed?
+
+:::: {layout="[ 40, 60 ]"}
+
+::: {#first-column}
+![](img/pharmaverse-pkg.jpg)
+:::
+
+::: {#second-column}
+
+- `pharmaverse` brings a new open source R-backbone to clinical reporting
+- most packages are collaborations
+- there is a shift towards more sharing of useful code
+
+::: {.fragment}
+::: {.callout-warning}
+
+## New territory for stastisical programmers!
+- Can we rely on OS code?
+- What if these collaborations fall apart?
+- Are we at risk?
+- How can we influence development?
+:::
+:::
+
+:::
+
+::::
+
+## Our aim
+
+Provide guidance tackling the core questions raised by PHUSE members around:
+
+::: {.incremental}
+  1. Using open OS :gear:
+  2. Releasing OS code :rocket:
+  3. Collaborating and governing OS :handshake:
+  4. Why OS'ing our code is important! :mega:
+:::
+
+::: {.fragment}
+::: {.callout-note}
+While *technically* legacy propriety code could be OS, and other languages are present like python, to align with the *pharmaverse* we decided to frame the guidance around R packages.
+:::
+:::
+
+## PHUSE E2E OS Guidance Working Group
+
+```{r}
+dplyr::tribble(
+  ~Name, ~Company,
+  "James Black", "Roche",
+  "Mike Stackhouse", "Atorus",
+  "Anders Bilgrau, Tobias Krøgholt", "Novo",
+  "Estella Dong,  Karl Brand", "Bayer",
+  "Keaven Anderson", "Merck",
+  "Phil Bowsher, Ryan Johnson", "Posit",
+  "Samir Parmar", "Pfizer"
+  ) %>%
+  dplyr::mutate(
+    Company = glue::glue("img/logo_{tolower(Company)}.png")
+  ) %>%
+  gt::gt() %>%
+  gtExtras::gt_img_rows(columns = Company, height = 26)
+
+
+
+```
+
+## The guidance is available now!
+
+::: {.callout-note}
+## Guidance document
+[phuse-org.github.io/E2E-OS-Guidance/](https://phuse-org.github.io/E2E-OS-Guidance/)
+:::
+
+::: {.fragment}
+::: {.callout-caution}
+This is a living document, please be vocal and contribute! 
+
+If you see something in this presentation you want to comment on, improve or challenge...
+
+- Talk to a working group member 
+- Make an issue
+- Make a PR on the document repository
+:::
+:::
+
+
+## Getting deeper into the guidance :diving_mask:
+
+## {.fragment-remove}
+
+::: {.fragment .fade-out fragment-index=1}
+### A brief overview
+:::
+
+
+::: columns
+::: {.column width="60%"}
+
+::: {.container .fragment .fade-up fragment-index=1}
+::: {.timeline .timeline-left style="height: 720px;"}
+
+
+
+::: {.timeline-block}
+
+::: {.timeline-content}
+An intro as to why OS and collaborate
+
+::: {.timeline-details .fragment .fade-out fragment-index=2}
+
+[We are already deeply leveraging OS, and by pooling resources on pre/post we can focus more on generating value]{style="padding-top:20px;display:block;"}
+
+[Every external contribution offers the chance to get back more than we invested]{style="padding-top:20px;display:block;"}
+
+[Is it ethically ok to **not** have key scientific logic done in an open source license free language?]{style="padding-top:20px;display:block;"}
+
+:::
+::: {.timeline-date}
+The why
+:::
+:::
+:::
+
+
+
+::: {.timeline-block .fragment .fade-up fragment-index=2}
+
+::: {.timeline-content}
+Project health, risks and licences
+
+::: {.timeline-details .fragment .fade-out fragment-index=3}
+[Examples are given on how to assess how engaged and active the community are, and what resources are available to find packages - like the [`pharmaverse`](pharmaverse.org) and [`openstatsware`](https://rconsortium.github.io/asa-biop-swe-wg/)]{style="padding-top:20px;display:block;"}
+
+[A discussion of the risks, and tools to assess risk and the impact of different licences]{style="padding-top:20px;display:block;"}
+:::
+::: {.timeline-date}
+Using OS
+:::
+:::
+:::
+
+
+
+::: {.timeline-block .fragment .fade-up fragment-index=3}
+::: {.timeline-content}
+Releasing, collaborating and governing OS
+
+::: {.timeline-details .fragment .fade-out fragment-index=4}
+[Understanding pre-competitive, competitive, and *post-competitive* IP.]{style="padding-top:20px;display:block;"}
+
+[Guidance on robust and safe release processes.]{style="padding-top:20px;display:block;"}
+
+[Examples of different governance models.]{style="padding-top:20px;display:block;"}
+:::
+::: {.timeline-date}
+Releasing
+:::
+:::
+:::
+
+:::
+:::
+
+
+:::
+:::
+
+## Demo navigating the guidance
+
+
+
+
+[phuse-org.github.io/E2E-OS-Guidance/ :link:](https://phuse-org.github.io/E2E-OS-Guidance/)

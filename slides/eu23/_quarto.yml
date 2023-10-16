@@ -1,5 +1,5 @@
 project:
   title: "phuse-2023-EU"
-  output-dir: .
+  output-dir: ../../_rendered/slides/eu23
 
 editor: source

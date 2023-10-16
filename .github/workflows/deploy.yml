@@ -37,3 +37,7 @@ jobs:
           path: slides/eu23
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check
+        run:
+          ls -la _rendered
