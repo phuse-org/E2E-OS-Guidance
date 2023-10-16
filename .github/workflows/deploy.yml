@@ -31,8 +31,6 @@ jobs:
           use-public-rspm: false
       - uses: r-lib/actions/setup-renv@v2
 
-      
-
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 

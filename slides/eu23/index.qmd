@@ -15,6 +15,7 @@ editor_options:
 ---
 
 ```{r setup, include=FALSE}
+library(rmarkdown)
 library(magrittr)
 ```
 
