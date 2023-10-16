@@ -22,9 +22,18 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Render and Publish
-        uses: quarto-dev/quarto-actions/publish@v2
+      - name: Render Guidance
+        uses: quarto-dev/quarto-actions/render@v2
         with:
-          target: gh-pages
+          to: html
+          path: .
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Render PHUSE slides
+        uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: html
+          path: slides/eu23
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
