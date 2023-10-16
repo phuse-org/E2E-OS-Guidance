@@ -1,0 +1,5 @@
+# Slides {.unnumbered}
+
+## PHUSE EU 2023
+
+[The following slides were shared](https://phuse-org.github.io/E2E-OS-Guidance/slides/eu23) at PHUSE EU 2023, as the official launch of this guidance document.

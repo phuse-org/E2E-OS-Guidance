@@ -125,8 +125,6 @@ dplyr::tribble(
   gtExtras::gt_img_rows(columns = Company, height = 26)
 
 ```
-
-
 :::
 
 
@@ -250,6 +248,6 @@ Releasing
 ::: {#second-column}
 The guidance is a `quarto` book hosted on the Github PHUSE organisation.
 
-[phuse-org.github.io/E2E-OS-Guidance/ :link:](https://phuse-org.github.io/E2E-OS-Guidance/)
+[phuse-org.github.io/E2E-OS-Guidance/ :link:](https://phuse-org.github.io/E2E-OS-Guidance/){preview-link="true"}
 :::
 ::::

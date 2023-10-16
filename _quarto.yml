@@ -26,6 +26,7 @@ book:
     - releasing.qmd
     - contributors.qmd
     - references.qmd
+    - slides.qmd
 
 csl: jama.csl
 bibliography: references.bib
