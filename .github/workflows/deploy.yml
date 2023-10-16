@@ -36,23 +36,13 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Render Guidance
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          to: html
-          path: .
+      - name: Render 
+        run: |
+          quarto render
+          quarto render slides/eu23
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-
-
-      - name: Render PHUSE slides
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          to: html
-          path: slides/eu23
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
