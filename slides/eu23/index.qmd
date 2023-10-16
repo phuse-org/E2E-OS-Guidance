@@ -100,6 +100,9 @@ While *technically* legacy propriety code could be OS, and other languages are p
 
 ## PHUSE E2E OS Guidance Working Group
 
+:::: {layout="[ 40, 60 ]"}
+
+::: {#first-column}
 ```{r}
 dplyr::tribble(
   ~Name, ~Company,
@@ -110,16 +113,30 @@ dplyr::tribble(
   "Keaven Anderson", "Merck",
   "Phil Bowsher, Ryan Johnson", "Posit",
   "Samir Parmar", "Pfizer"
-  ) %>%
+  ) |>
   dplyr::mutate(
     Company = glue::glue("img/logo_{tolower(Company)}.png")
-  ) %>%
-  gt::gt() %>%
+  ) |>
+  gt::gt() |>
+  gt::tab_footnote(
+    footnote = "Estella has since moved to Lausanne University Hospital",
+    locations = gt::cells_body(columns = Name, rows = 4)
+  ) |>
   gtExtras::gt_img_rows(columns = Company, height = 26)
 
-
-
 ```
+
+
+:::
+
+
+::: {#second-column}
+Pan-industry group formed under the PHUSE [Data Visualisation & Open Source Technology](https://advance.phuse.global/pages/viewpage.action?pageId=327777)
+
+Contributors spanned 5 Pharma companies and 2 vendors, all with experience both releasing and maintaining OS codebases.
+:::
+
+::::
 
 ## The guidance is available now!
 
@@ -224,7 +241,15 @@ Releasing
 
 ## Demo navigating the guidance
 
+:::: {layout="[ 30, 75 ]"}
 
+::: {#first-column}
+![](img/website-app.png)
+:::
 
+::: {#second-column}
+The guidance is a `quarto` book hosted on the Github PHUSE organisation.
 
 [phuse-org.github.io/E2E-OS-Guidance/ :link:](https://phuse-org.github.io/E2E-OS-Guidance/)
+:::
+::::
