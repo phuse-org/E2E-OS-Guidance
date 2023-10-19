@@ -69,7 +69,7 @@ Links to the guidance and slides
 ::: {.fragment}
 ::: {.callout-warning}
 
-## New territory for stastisical programmers!
+## New territory for statistical programmers!
 - Can we rely on OS code?
 - What if these collaborations fall apart?
 - Are we at risk?
@@ -86,7 +86,7 @@ Links to the guidance and slides
 Provide guidance tackling the core questions raised by PHUSE members around:
 
 ::: {.incremental}
-  1. Using open OS :gear:
+  1. Using OS :gear:
   2. Releasing OS code :rocket:
   3. Collaborating and governing OS :handshake:
   4. Why OS'ing our code is important! :mega:
